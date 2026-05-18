@@ -60,6 +60,8 @@ macOS：
 
 加入社群，让 MyCodex 更普惠。
 
+扫码添加时请备注：`MyCodex`
+
 <img src="assets/mycodex-community-wechat.jpg" alt="加入 MyCodex 社群二维码" width="260">
 
 ## 当前状态
