@@ -1,4 +1,4 @@
-# Open Codex CC
+# MyCodex
 
 人人都能免费用的 Codex + Hermes，让你的工作流程免 TOKEN、稳定、高效。
 
