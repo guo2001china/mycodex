@@ -4,15 +4,22 @@
 
 ## 下载
 
-当前先发布 Windows x64 portable 包，源码暂不发布。
+当前先发布 Windows x64 portable 包和 macOS arm64 安装包，源码暂不发布。
 
 请到 [GitHub Releases](https://github.com/guo2001china/mycodex/releases) 下载最新版本。
 
 ## 使用
 
+Windows：
+
 1. 下载 `MyCodex-0.1.0-windows-x64-portable.zip`。
 2. 解压整个文件夹。
 3. 运行解压目录里的 `MyCodex.exe`。
+
+macOS：
+
+1. 下载 `MyCodex-0.1.0-mac-arm64.dmg`。
+2. 打开 dmg 后拖拽安装 `MyCodex.app`。
 
 ## 适合谁
 
