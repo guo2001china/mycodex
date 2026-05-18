@@ -8,6 +8,12 @@
 
 请到 [GitHub Releases](https://github.com/guo2001china/mycodex/releases) 下载最新版本。
 
+## 加入社群
+
+加入社群，让 MyCodex 更普惠。
+
+<img src="assets/mycodex-community-wechat.jpg" alt="加入 MyCodex 社群二维码" width="260">
+
 ## 使用
 
 Windows：
