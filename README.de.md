@@ -6,13 +6,13 @@ Codex + Hermes für alle: weniger Token-Stress, weniger fragile Setups, ein stab
 
 MyCodex verpackt Codex + Hermes als Desktop-Arbeitsplatz. Du öffnest die App, beschreibst das gewünschte Ergebnis, und der Agent führt die Aufgabe aus, zeigt den Ablauf und speichert Ergebnisdateien. Über WeChat lassen sich Aufgaben auch vom Smartphone aus senden und Dateien zurückerhalten.
 
-## v0.5.0
+## v0.6.1
 
-- WeChat kann MyCodex steuern: Aufgaben senden, Gespräche fortsetzen, Ergebnisdateien empfangen.
-- Hermes ist in den MyCodex-Workflow eingebunden.
-- Computer- und Mobile-Automation wird weiter ausgebaut: wiederholte Klicks, seitenübergreifende Recherche, Browser-Arbeit und mobile Nachrichten-Einstiege.
-- Der Privacy-Browser-Ansatz wird weiterverfolgt: Login, Browsing, Automatisierung und Account-Isolation sollen kontrollierter laufen.
-- Modell-Setup wird einfacher: zuerst Subscription-Accounts, API Keys bleiben für Power-User verfügbar.
+- Cloud-auth-Verbindungen haben jetzt klare Timeouts und sichere Retries bei kurzen Netzwerkfehlern.
+- Downloadbare Desktop-Pakete enthalten die produktive MyCodex-Verbindungsadresse und fallen nicht mehr auf lokale Entwicklungswerte zurück.
+- Der Windows-Betrieb ist robuster: vollständige zip-Struktur, Runtime-Platzierung und Paketkonfiguration werden vor einem Windows-Asset geprüft.
+- macOS Apple Silicon und Intel wurden als 0.6.1 neu gebaut.
+- WeChat und Hermes bleiben der Kern-Workflow: Aufgaben senden, Gespräche fortsetzen, Ergebnisdateien empfangen.
 - Ergebnisse bleiben als Arbeitsnachweis erhalten: Ablauf, Fazit, Tabellen, Dateien und nächste Schritte in derselben Unterhaltung.
 
 ## Warum
@@ -114,9 +114,9 @@ Wer eigene API Keys nutzt, kann Provider, Modell, API Key, Base URL und Standard
 
 Der Quellcode ist noch nicht veröffentlicht. Aktuell gibt es zuerst gepackte Installer.
 
-- macOS Apple Silicon: `MyCodex-0.5.0-mac-arm64.dmg` oder `MyCodex-0.5.0-mac-arm64.zip`
-- macOS Intel: `MyCodex-0.5.0-mac-x64.dmg` oder `MyCodex-0.5.0-mac-x64.zip`
-- Windows x64: vorerst das portable Paket aus einem früheren Release nutzen. Das v0.5.0-Windows-Paket folgt später.
+- macOS Apple Silicon: `MyCodex-0.6.1-mac-arm64.dmg` oder `MyCodex-0.6.1-mac-arm64.zip`
+- macOS Intel: `MyCodex-0.6.1-mac-x64.dmg` oder `MyCodex-0.6.1-mac-x64.zip`
+- Windows x64: 0.6.1 enthält Windows-Stabilitätsarbeit, aber das downloadbare Windows-zip folgt nach dem Target-Build der Windows-Runtime. Bis dahin das portable Paket aus einem früheren Release nutzen.
 
 Download über [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
 

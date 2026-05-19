@@ -6,13 +6,13 @@ Codex + Hermes pour tout le monde : moins de friction autour des tokens, moins d
 
 MyCodex transforme Codex + Hermes en espace de travail desktop. Vous ouvrez l'application, décrivez le résultat attendu, puis l'Agent exécute la tâche, affiche le déroulé et conserve les fichiers produits. Avec WeChat connecté, vous pouvez aussi envoyer des tâches et recevoir des fichiers depuis le téléphone.
 
-## v0.5.0
+## v0.6.1
 
-- WeChat peut piloter MyCodex : envoyer des tâches, continuer une conversation, recevoir les fichiers de résultat.
-- Hermes est relié au workflow MyCodex.
-- L'automatisation ordinateur et mobile continue d'avancer : clics répétés, collecte entre plusieurs pages, navigation, entrée par messagerie mobile.
-- Le travail autour du navigateur privé continue : connexion, navigation, automatisation et isolation des comptes dans un environnement plus contrôlé.
-- La configuration des modèles est plus simple : les comptes d'abonnement sont privilégiés, les API Keys restent disponibles.
+- Les connexions cloud auth ont maintenant un timeout clair et une relance sûre en cas de panne réseau courte.
+- Les packages desktop distribués embarquent l'adresse MyCodex de production, ce qui réduit les échecs au premier lancement liés aux valeurs locales de développement.
+- Le travail de stabilité Windows est dans cette ligne de release : structure zip complète, emplacement du runtime et configuration packagée sont vérifiés avant d'attacher un asset Windows.
+- Les packages macOS Apple Silicon et Intel sont reconstruits en 0.6.1.
+- WeChat et Hermes restent le workflow principal : envoyer des tâches, continuer une conversation, recevoir les fichiers de résultat.
 - Les résultats ne sont pas seulement une réponse : déroulé, conclusion, tableaux, fichiers et prochaines actions restent dans la même conversation.
 
 ## Le problème
@@ -114,9 +114,9 @@ Les utilisateurs avec leurs propres API Keys peuvent choisir le fournisseur, le 
 
 Le code source n'est pas encore publié. Le dépôt fournit d'abord des installateurs packagés.
 
-- macOS Apple Silicon : `MyCodex-0.5.0-mac-arm64.dmg` ou `MyCodex-0.5.0-mac-arm64.zip`
-- macOS Intel : `MyCodex-0.5.0-mac-x64.dmg` ou `MyCodex-0.5.0-mac-x64.zip`
-- Windows x64 : utiliser pour l'instant le package portable d'un ancien Release. Le package Windows v0.5.0 sera ajouté plus tard.
+- macOS Apple Silicon : `MyCodex-0.6.1-mac-arm64.dmg` ou `MyCodex-0.6.1-mac-arm64.zip`
+- macOS Intel : `MyCodex-0.6.1-mac-x64.dmg` ou `MyCodex-0.6.1-mac-x64.zip`
+- Windows x64 : 0.6.1 inclut le travail de stabilité Windows, mais le zip Windows distribuable sera ajouté après le build cible du runtime Windows. Pour l'instant, utilisez le package portable d'un ancien Release.
 
 Téléchargement via [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
 

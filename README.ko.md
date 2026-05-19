@@ -6,13 +6,13 @@
 
 MyCodex는 Codex + Hermes를 일반 사용자도 바로 열어 쓸 수 있는 작업 공간으로 묶었습니다. 앱을 열고 원하는 결과를 말하면 Agent가 작업을 실행하고, 과정을 보여주고, 결과 파일을 남깁니다. WeChat을 연결하면 컴퓨터 앞에 없을 때도 휴대폰에서 작업을 보내고 파일을 받을 수 있습니다.
 
-## v0.5.0 주요 내용
+## v0.6.1 주요 내용
 
-- WeChat으로 MyCodex를 제어할 수 있습니다. 작업을 보내고, 대화를 이어가고, 결과 파일을 받을 수 있습니다.
-- Hermes 실행 기능을 MyCodex 워크플로에 연결했습니다.
-- 컴퓨터와 모바일 자동화를 계속 확장하고 있습니다. 반복 클릭, 여러 페이지에 걸친 정리, 브라우저 작업, 모바일 메시지 입구에 적합합니다.
-- 프라이버시 브라우저 방향도 진행 중입니다. 로그인, 탐색, 자동화, 계정 격리를 더 통제 가능한 환경으로 옮기고 있습니다.
-- 모델 연결은 구독 계정을 우선합니다. API Key 방식도 그대로 지원합니다.
+- cloud auth 연결에 명시적인 타임아웃과 안전한 재시도를 추가해 짧은 네트워크 장애에 더 강해졌습니다.
+- 배포용 데스크톱 패키지에 운영 MyCodex 연결 설정을 포함해 첫 실행 시 잘못된 로컬 개발 주소로 연결되는 문제를 줄였습니다.
+- Windows 안정 운영을 위한 흐름이 추가되었습니다. 전체 zip 구조, runtime 위치, 패키지 설정을 릴리스 전에 검사합니다.
+- macOS Apple Silicon과 Intel 패키지를 0.6.1로 새로 빌드했습니다.
+- WeChat과 Hermes 워크플로는 계속 핵심입니다. 작업 전송, 대화 이어가기, 결과 파일 수신에 사용할 수 있습니다.
 - 결과는 단순한 답변이 아니라 과정, 결론, 표, 파일, 다음 행동까지 같은 대화에 남습니다.
 
 ## 해결하려는 문제
@@ -122,9 +122,9 @@ Grok, Nous, ChatGPT / Codex, Gemini, MiniMax, Qwen, GitHub Copilot, Claude Max �
 
 소스 코드는 아직 공개하지 않습니다. 현재는 패키징된 설치 파일을 먼저 제공합니다.
 
-- macOS Apple Silicon: `MyCodex-0.5.0-mac-arm64.dmg` 또는 `MyCodex-0.5.0-mac-arm64.zip`
-- macOS Intel: `MyCodex-0.5.0-mac-x64.dmg` 또는 `MyCodex-0.5.0-mac-x64.zip`
-- Windows x64: 지금은 이전 Release의 portable 패키지를 사용하세요. v0.5.0 Windows 패키지는 나중에 추가할 예정입니다.
+- macOS Apple Silicon: `MyCodex-0.6.1-mac-arm64.dmg` 또는 `MyCodex-0.6.1-mac-arm64.zip`
+- macOS Intel: `MyCodex-0.6.1-mac-x64.dmg` 또는 `MyCodex-0.6.1-mac-x64.zip`
+- Windows x64: 0.6.1에는 Windows 안정 운영 개선이 포함되어 있지만, 배포용 Windows zip은 Windows runtime target build가 준비된 뒤 추가할 예정입니다. 지금은 이전 Release의 portable 패키지를 사용하세요.
 
 [GitHub Releases](https://github.com/guo2001china/mycodex/releases)에서 받을 수 있습니다.
 

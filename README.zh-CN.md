@@ -25,13 +25,13 @@ MyCodex 做的事情很简单：把 Codex + Hermes 包成一个普通人能直�
   <a href="#加入社群">加入社群</a>
 </p>
 
-## 0.5.0 发布重点
+## 0.6.1 发布重点
 
-- 微信可以直接管 MyCodex：发任务、继续对话、收结果文件，不用一直守在电脑前。
-- Hermes 接进了 MyCodex 工作流：用户还是聊天，底层执行交给 Agent。
-- 电脑和手机自动化在继续推进：重复点击、跨页面整理、浏览器访问、手机消息入口，都适合交给它跑。
-- 隐私浏览器方向也在做：把登录、访问、自动化浏览、账号隔离放到更可控的环境里，减少污染主浏览器。
-- 模型接入少折腾：优先走订阅账号，不想管 API Key 的人可以少填很多东西；需要 API Key 的高级用户也能继续用。
+- 连接稳定性更好：cloud auth 请求增加了明确超时，短暂网络失败会安全重试。
+- 桌面发布包内置正式的 MyCodex 云端连接配置，减少首次启动误连本地开发地址导致的失败。
+- Windows 稳定运营链路进入 0.6.1：发布流程会检查完整 Windows zip 结构、内置 runtime 位置和打包配置。
+- macOS Apple Silicon 和 Intel 安装包已刷新到 0.6.1。
+- 微信和 Hermes 仍是主工作流：发任务、继续对话、收结果文件，不用一直守在电脑前。
 - 结果不只是一段回复：过程、结论、表格、文件和下一步动作都会留在同一个对话里。
 
 ## 这东西解决什么
@@ -256,9 +256,9 @@ Agent 开始跑以后，页面会告诉用户现在正在做什么。
 
 当前 Release：
 
-- macOS Apple Silicon：`MyCodex-0.5.0-mac-arm64.dmg` 和 `MyCodex-0.5.0-mac-arm64.zip`。
-- macOS Intel：`MyCodex-0.5.0-mac-x64.dmg` 和 `MyCodex-0.5.0-mac-x64.zip`。
-- Windows x64：当前可用 portable 包仍在历史 Release 中，0.5.0 Windows 包会继续补齐。
+- macOS Apple Silicon：`MyCodex-0.6.1-mac-arm64.dmg` 和 `MyCodex-0.6.1-mac-arm64.zip`。
+- macOS Intel：`MyCodex-0.6.1-mac-x64.dmg` 和 `MyCodex-0.6.1-mac-x64.zip`。
+- Windows x64：0.6.1 已包含 Windows 稳定运营相关改进，但可下载的 Windows zip 还需要目标 Windows 环境生成 runtime 后再补充。当前可先使用历史 Release 中的 portable 包。
 
 请到 [GitHub Releases](https://github.com/guo2001china/mycodex/releases) 下载。
 
@@ -277,14 +277,14 @@ MyCodex 还在快速迭代。公开 issue 会用来收集路线图投票、安�
 
 macOS：
 
-1. Apple Silicon 机器下载 `MyCodex-0.5.0-mac-arm64.dmg`，Intel 机器下载 `MyCodex-0.5.0-mac-x64.dmg`。
+1. Apple Silicon 机器下载 `MyCodex-0.6.1-mac-arm64.dmg`，Intel 机器下载 `MyCodex-0.6.1-mac-x64.dmg`。
 2. 打开 dmg。
 3. 拖拽安装 `MyCodex.app`。
 4. 启动后登录、接入模型、开始发任务。
 
 Windows：
 
-1. 到 Releases 下载 Windows x64 portable 包。
+1. 等 0.6.1 Windows 资产补齐后，到 Releases 下载 Windows x64 portable 包。
 2. 解压整个文件夹。
 3. 运行解压目录里的 `MyCodex.exe`。
 
