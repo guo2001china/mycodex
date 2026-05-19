@@ -1,0 +1,23 @@
+name: Community feedback
+description: Share how you use MyCodex or what blocks adoption.
+title: "[Feedback]: "
+labels: ["community", "needs-feedback"]
+body:
+  - type: textarea
+    id: role
+    attributes:
+      label: Who are you using MyCodex for?
+      placeholder: "Founder, operator, sales, assistant, support, personal workflow..."
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What workflow are you trying to run?
+    validations:
+      required: true
+  - type: textarea
+    id: blocker
+    attributes:
+      label: What is blocking you?
+      placeholder: "Install, login, model setup, WeChat, files, automation, unclear docs..."

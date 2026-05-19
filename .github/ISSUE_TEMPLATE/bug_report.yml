@@ -1,0 +1,63 @@
+name: Bug report
+description: Something in MyCodex is not working as expected.
+title: "[Bug]: "
+labels: ["bug", "needs-feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please avoid posting API keys, tokens, cookies, or private files.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Desktop app
+        - Login
+        - Conversation
+        - File preview
+        - WeChat mobile entry
+        - Model provider
+        - Installer
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the behavior and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open MyCodex
+        2. Go to ...
+        3. Click ...
+        4. See ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: MyCodex version
+      placeholder: "v0.5.0"
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - macOS Apple Silicon
+        - macOS Intel
+        - Windows x64
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or logs
+      description: Attach screenshots or logs if useful. Remove private data first.

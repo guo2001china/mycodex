@@ -2,6 +2,13 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md)
 
+<p align="center">
+  <a href="https://github.com/guo2001china/mycodex/releases"><img alt="Release" src="https://img.shields.io/github/v/release/guo2001china/mycodex?display_name=tag"></a>
+  <a href="https://github.com/guo2001china/mycodex/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/guo2001china/mycodex/total"></a>
+  <a href="https://github.com/guo2001china/mycodex/issues"><img alt="Issues" src="https://img.shields.io/github/issues/guo2001china/mycodex"></a>
+  <a href="https://github.com/guo2001china/mycodex/discussions"><img alt="Discussions" src="https://img.shields.io/badge/discussions-open-2ea44f"></a>
+</p>
+
 Free Codex + Hermes for everyone: fewer tokens, fewer fragile setups, a steadier workflow.
 
 MyCodex wraps Codex + Hermes into a desktop workspace that normal users can actually open and use.
@@ -12,6 +19,8 @@ You do not need to start with tokens, command lines, model routing, or environme
   <a href="https://github.com/guo2001china/mycodex/releases">Download MyCodex</a>
   ·
   <a href="#desktop-tour">Desktop tour</a>
+  ·
+  <a href="#roadmap-and-feedback">Roadmap</a>
   ·
   <a href="#community">Community</a>
 </p>
@@ -252,6 +261,17 @@ Current release:
 - Windows x64: use the portable package from the historical Release for now. The v0.5.0 Windows package will be added later.
 
 Download from [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
+
+## Roadmap and Feedback
+
+MyCodex is still moving quickly. Public issues are used for roadmap signals, install problems, model-provider requests, and translation fixes.
+
+- [Roadmap issues](https://github.com/guo2001china/mycodex/issues?q=is%3Aissue+is%3Aopen+label%3Aroadmap)
+- [Installation help](https://github.com/guo2001china/mycodex/issues/new?template=installation_help.yml)
+- [Feature request](https://github.com/guo2001china/mycodex/issues/new?template=feature_request.yml)
+- [Model provider request](https://github.com/guo2001china/mycodex/issues/new?template=model_provider.yml)
+- [Translation feedback](https://github.com/guo2001china/mycodex/issues/new?template=localization.yml)
+- [Discussions](https://github.com/guo2001china/mycodex/discussions)
 
 ## Install
 

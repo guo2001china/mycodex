@@ -2,6 +2,13 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md)
 
+<p align="center">
+  <a href="https://github.com/guo2001china/mycodex/releases"><img alt="Release" src="https://img.shields.io/github/v/release/guo2001china/mycodex?display_name=tag"></a>
+  <a href="https://github.com/guo2001china/mycodex/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/guo2001china/mycodex/total"></a>
+  <a href="https://github.com/guo2001china/mycodex/issues"><img alt="Issues" src="https://img.shields.io/github/issues/guo2001china/mycodex"></a>
+  <a href="https://github.com/guo2001china/mycodex/discussions"><img alt="Discussions" src="https://img.shields.io/badge/discussions-open-2ea44f"></a>
+</p>
+
 人人都能免费用的 Codex + Hermes，让你的工作流程免 TOKEN、稳定、高效。
 
 MyCodex 做的事情很简单：把 Codex + Hermes 包成一个普通人能直接用的桌面工作台。
@@ -12,6 +19,8 @@ MyCodex 做的事情很简单：把 Codex + Hermes 包成一个普通人能直�
   <a href="https://github.com/guo2001china/mycodex/releases">下载 MyCodex</a>
   ·
   <a href="#桌面版完整说明">看桌面版截图</a>
+  ·
+  <a href="#roadmap-和反馈">Roadmap 和反馈</a>
   ·
   <a href="#加入社群">加入社群</a>
 </p>
@@ -252,6 +261,17 @@ Agent 开始跑以后，页面会告诉用户现在正在做什么。
 - Windows x64：当前可用 portable 包仍在历史 Release 中，0.5.0 Windows 包会继续补齐。
 
 请到 [GitHub Releases](https://github.com/guo2001china/mycodex/releases) 下载。
+
+## Roadmap 和反馈
+
+MyCodex 还在快速迭代。公开 issue 会用来收集路线图投票、安装问题、模型接入需求和翻译修正。
+
+- [Roadmap issues](https://github.com/guo2001china/mycodex/issues?q=is%3Aissue+is%3Aopen+label%3Aroadmap)
+- [安装问题](https://github.com/guo2001china/mycodex/issues/new?template=installation_help.yml)
+- [功能建议](https://github.com/guo2001china/mycodex/issues/new?template=feature_request.yml)
+- [模型接入需求](https://github.com/guo2001china/mycodex/issues/new?template=model_provider.yml)
+- [翻译反馈](https://github.com/guo2001china/mycodex/issues/new?template=localization.yml)
+- [Discussions](https://github.com/guo2001china/mycodex/discussions)
 
 ## 使用
 

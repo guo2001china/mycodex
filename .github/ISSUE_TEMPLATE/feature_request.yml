@@ -1,0 +1,36 @@
+name: Feature request
+description: Suggest a new capability or workflow.
+title: "[Feature]: "
+labels: ["enhancement", "needs-feedback"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should MyCodex solve?
+      description: Describe the user scenario, not only the feature name.
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What should the workflow look like?
+      placeholder: "I want to open MyCodex, send ..., and receive ..."
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Codex / Agent workflow
+        - Hermes integration
+        - WeChat mobile entry
+        - Computer automation
+        - Browser automation
+        - Privacy browser
+        - Model provider
+        - File preview
+        - Installer
+        - Other
+    validations:
+      required: true

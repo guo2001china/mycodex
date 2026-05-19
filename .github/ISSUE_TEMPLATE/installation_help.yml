@@ -1,0 +1,35 @@
+name: Installation help
+description: Get help with downloading, installing, or launching MyCodex.
+title: "[Install]: "
+labels: ["support", "installer", "needs-feedback"]
+body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - macOS Apple Silicon
+        - macOS Intel
+        - Windows x64
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: asset
+    attributes:
+      label: Installer file
+      placeholder: "MyCodex-0.5.0-mac-arm64.dmg"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What went wrong?
+      description: Tell us where you got stuck.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: A screenshot of the error usually helps.

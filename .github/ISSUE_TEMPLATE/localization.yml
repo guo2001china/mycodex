@@ -1,0 +1,26 @@
+name: Localization feedback
+description: Improve English, Chinese, Japanese, Korean, German, or French docs.
+title: "[i18n]: "
+labels: ["documentation", "localization", "good first issue"]
+body:
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options:
+        - English
+        - Simplified Chinese
+        - Japanese
+        - Korean
+        - German
+        - French
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What should be improved?
+      description: Point to the section and suggest better wording if possible.
+    validations:
+      required: true

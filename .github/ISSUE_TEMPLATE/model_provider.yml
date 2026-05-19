@@ -1,0 +1,34 @@
+name: Model provider request
+description: Request or report a model provider, subscription account, or API Key integration.
+title: "[Provider]: "
+labels: ["model-provider", "needs-feedback"]
+body:
+  - type: input
+    id: provider
+    attributes:
+      label: Provider name
+      placeholder: "Grok, ChatGPT / Codex, Gemini, Qwen, Claude Max, ..."
+    validations:
+      required: true
+  - type: dropdown
+    id: credential
+    attributes:
+      label: Preferred connection
+      options:
+        - Subscription account
+        - API Key
+        - OAuth
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: What do you want to use it for?
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Do not paste keys, tokens, cookies, or account secrets.
