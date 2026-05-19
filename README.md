@@ -246,6 +246,7 @@ Agent 开始跑以后，页面会告诉用户现在正在做什么。
 当前 Release：
 
 - macOS Apple Silicon：`MyCodex-0.5.0-mac-arm64.dmg` 和 `MyCodex-0.5.0-mac-arm64.zip`。
+- macOS Intel：`MyCodex-0.5.0-mac-x64.dmg` 和 `MyCodex-0.5.0-mac-x64.zip`。
 - Windows x64：当前可用 portable 包仍在历史 Release 中，0.5.0 Windows 包会继续补齐。
 
 请到 [GitHub Releases](https://github.com/guo2001china/mycodex/releases) 下载。
@@ -254,7 +255,7 @@ Agent 开始跑以后，页面会告诉用户现在正在做什么。
 
 macOS：
 
-1. 下载 `MyCodex-0.5.0-mac-arm64.dmg`。
+1. Apple Silicon 机器下载 `MyCodex-0.5.0-mac-arm64.dmg`，Intel 机器下载 `MyCodex-0.5.0-mac-x64.dmg`。
 2. 打开 dmg。
 3. 拖拽安装 `MyCodex.app`。
 4. 启动后登录、接入模型、开始发任务。
