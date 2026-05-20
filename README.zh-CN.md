@@ -25,12 +25,13 @@ MyCodex 做的事情很简单：把 Codex + Hermes 包成一个普通人能直�
   <a href="#加入社群">加入社群</a>
 </p>
 
-## 0.7.0 发布重点
+## 0.8.0 发布重点
 
-- 新增隐私浏览器控制：Agent 可以打开并操作隔离的浏览器会话执行网页任务，不混用用户日常浏览器状态。
-- 浏览器类任务会留下更清晰的过程记录，导航、读取页面和页面交互都可以回到同一个对话里查看。
-- 0.6.1 的连接稳定性改进继续保留：cloud auth 请求有明确超时、安全重试，并使用正式 MyCodex 云端连接配置。
-- macOS Apple Silicon 和 Intel 安装包已刷新到 0.7.0。
+- 设置页新增 Agent 配置区域，可以调整默认权限、工具范围、网络访问和最长运行时间。
+- Runtime 区域增加运行任务状态，可以刷新当前任务并停止全部运行任务。
+- Runtime 状态展示 Hermes 数据目录，方便排查本地 Agent 认证和运行环境。
+- 对话侧边栏只对运行中、等待、失败和已停止状态展示状态标记；已完成对话不再显示灰色完成勾。
+- macOS Apple Silicon 和 Intel 安装包已刷新到 0.8.0。
 - 微信和 Hermes 仍是主工作流：发任务、继续对话、收结果文件，不用一直守在电脑前。
 - 结果不只是一段回复：过程、结论、表格、文件和下一步动作都会留在同一个对话里。
 
@@ -159,14 +160,15 @@ Agent 开始跑以后，页面会告诉用户现在正在做什么。
 
 这样至少能回答一个现实问题：Agent 到底做了什么，文件是不是它真的生成的。
 
-### 8. 隐私浏览器控制
+### 8. Agent 设置和 Runtime 控制
 
-需要查网页或操作网页时，MyCodex 可以让 Agent 驱动一个独立的隐私浏览器会话，而不是直接混用用户日常浏览器。
+MyCodex 现在把 Agent 运行方式和可用范围交给用户直接控制。
 
-- 在隔离的任务浏览器里打开页面。
-- 浏览器导航、读取、点击和页面交互会进入执行过程。
-- 网页上下文、对话结果和生成文件仍绑定在同一个任务中。
-- 任务结束后可以关闭本次浏览器会话，减少和日常浏览器状态的互相影响。
+- 设置默认 Agent 权限、工具范围、网络访问和最长运行时间。
+- 在设置页查看当前 Runtime 运行任务。
+- 刷新当前任务状态，或停止全部运行任务。
+- 查看 Hermes 数据目录，用于本地认证和运行环境排查。
+- Agent 产物写入当前项目下的 per-run 目录，项目工作目录和结果目录更清楚。
 
 ### 9. 文件预览
 
@@ -265,9 +267,9 @@ Agent 开始跑以后，页面会告诉用户现在正在做什么。
 
 当前 Release：
 
-- macOS Apple Silicon：`MyCodex-0.7.0-mac-arm64.dmg` 和 `MyCodex-0.7.0-mac-arm64.zip`。
-- macOS Intel：`MyCodex-0.7.0-mac-x64.dmg` 和 `MyCodex-0.7.0-mac-x64.zip`。
-- Windows x64：0.7.0 Windows 资产会在目标 Windows 环境 runtime build 准备好以后补充。当前可先使用历史 Release 中的 portable 包。
+- macOS Apple Silicon：`MyCodex-0.8.0-mac-arm64.dmg` 和 `MyCodex-0.8.0-mac-arm64.zip`。
+- macOS Intel：`MyCodex-0.8.0-mac-x64.dmg` 和 `MyCodex-0.8.0-mac-x64.zip`。
+- Windows x64：0.8.0 Windows 资产会在目标 Windows 环境 runtime build 准备好以后补充。当前可先使用历史 Release 中的 portable 包。
 
 请到 [GitHub Releases](https://github.com/guo2001china/mycodex/releases) 下载。
 
@@ -286,14 +288,14 @@ MyCodex 还在快速迭代。公开 issue 会用来收集路线图投票、安�
 
 macOS：
 
-1. Apple Silicon 机器下载 `MyCodex-0.7.0-mac-arm64.dmg`，Intel 机器下载 `MyCodex-0.7.0-mac-x64.dmg`。
+1. Apple Silicon 机器下载 `MyCodex-0.8.0-mac-arm64.dmg`，Intel 机器下载 `MyCodex-0.8.0-mac-x64.dmg`。
 2. 打开 dmg。
 3. 拖拽安装 `MyCodex.app`。
 4. 启动后登录、接入模型、开始发任务。
 
 Windows：
 
-1. 等 0.7.0 Windows 资产补齐后，到 Releases 下载 Windows x64 portable 包。
+1. 等 0.8.0 Windows 资产补齐后，到 Releases 下载 Windows x64 portable 包。
 2. 解压整个文件夹。
 3. 运行解压目录里的 `MyCodex.exe`。
 

@@ -6,12 +6,13 @@ Codex + Hermes pour tout le monde : moins de friction autour des tokens, moins d
 
 MyCodex transforme Codex + Hermes en espace de travail desktop. Vous ouvrez l'application, décrivez le résultat attendu, puis l'Agent exécute la tâche, affiche le déroulé et conserve les fichiers produits. Avec WeChat connecté, vous pouvez aussi envoyer des tâches et recevoir des fichiers depuis le téléphone.
 
-## v0.7.0
+## v0.8.0
 
-- Private Browser Control est ajouté : l'Agent peut ouvrir et piloter une session navigateur isolée pour les tâches web, sans mélanger l'état du navigateur quotidien de l'utilisateur.
-- Les tâches avec navigateur conservent un déroulé plus clair, avec navigation, lecture de pages et interactions visibles dans la conversation.
-- Les améliorations de stabilité de 0.6.1 restent actives : timeouts cloud auth, relances sûres et adresse MyCodex de production dans les packages.
-- Les packages macOS Apple Silicon et Intel sont reconstruits en 0.7.0.
+- Les paramètres ajoutent une configuration Agent : permissions par défaut, périmètre des outils, accès réseau et durée maximale d'exécution.
+- La zone Runtime affiche les tâches actives, permet de rafraîchir l'état et d'arrêter toutes les tâches en cours.
+- L'état Runtime affiche le répertoire de données Hermes pour faciliter le diagnostic de l'authentification locale et de l'environnement d'exécution.
+- La liste des conversations n'affiche des marqueurs que pour les états en cours, en attente, en échec ou arrêtés.
+- Les packages macOS Apple Silicon et Intel sont reconstruits en 0.8.0.
 - WeChat et Hermes restent le workflow principal : envoyer des tâches, continuer une conversation, recevoir les fichiers de résultat.
 - Les résultats ne sont pas seulement une réponse : déroulé, conclusion, tableaux, fichiers et prochaines actions restent dans la même conversation.
 
@@ -76,9 +77,9 @@ MyCodex garde Markdown, tableaux, liens, pièces jointes et fichiers générés 
 
 Lecture, recherche, synthèse, écriture de fichiers et chemins touchés peuvent être inspectés.
 
-### Private Browser Control
+### Configuration Agent et contrôle Runtime
 
-Quand une tâche a besoin du web, l'Agent peut piloter une session navigateur privée et séparée. Les ouvertures de pages, lectures, clics et autres interactions restent visibles dans le déroulé, tandis que les réponses et fichiers produits restent liés à la même conversation. La session peut être fermée à la fin de la tâche pour limiter le chevauchement avec le navigateur habituel.
+MyCodex donne plus de contrôle sur la manière dont l'Agent s'exécute et sur les outils qu'il peut utiliser. Les permissions, le périmètre des outils, l'accès réseau et la durée maximale sont configurables. Depuis les paramètres, il est possible de rafraîchir les tâches Runtime actives ou de les arrêter, et le répertoire de données Hermes aide au diagnostic local.
 
 ### Aperçu de fichiers
 
@@ -118,9 +119,9 @@ Les utilisateurs avec leurs propres API Keys peuvent choisir le fournisseur, le 
 
 Le code source n'est pas encore publié. Le dépôt fournit d'abord des installateurs packagés.
 
-- macOS Apple Silicon : `MyCodex-0.7.0-mac-arm64.dmg` ou `MyCodex-0.7.0-mac-arm64.zip`
-- macOS Intel : `MyCodex-0.7.0-mac-x64.dmg` ou `MyCodex-0.7.0-mac-x64.zip`
-- Windows x64 : l'asset Windows 0.7.0 sera ajouté après le build cible du runtime Windows. Pour l'instant, utilisez le package portable d'un ancien Release.
+- macOS Apple Silicon : `MyCodex-0.8.0-mac-arm64.dmg` ou `MyCodex-0.8.0-mac-arm64.zip`
+- macOS Intel : `MyCodex-0.8.0-mac-x64.dmg` ou `MyCodex-0.8.0-mac-x64.zip`
+- Windows x64 : l'asset Windows 0.8.0 sera ajouté après le build cible du runtime Windows. Pour l'instant, utilisez le package portable d'un ancien Release.
 
 Téléchargement via [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
 

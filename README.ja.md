@@ -6,12 +6,13 @@
 
 MyCodex は Codex + Hermes を、普通のユーザーがそのまま使える作業台としてまとめたものです。アプリを開き、やりたいことを伝えると、Agent が処理を進め、途中経過を見せ、結果ファイルを残します。WeChat を接続すれば、PC の前にいない時でもタスクを投げたり、結果ファイルを受け取ったりできます。
 
-## v0.7.0 のポイント
+## v0.8.0 のポイント
 
-- Private Browser Control を追加しました。Agent は通常のブラウザ状態と混ざらない、分離されたブラウザセッションで Web タスクを実行できます。
-- ブラウザを使うタスクでは、ナビゲーション、ページ読み取り、操作の流れを会話内の実行記録として確認しやすくなりました。
-- 0.6.1 の接続安定化は継続しています。cloud auth のタイムアウト、安全な再試行、本番 MyCodex 接続設定を維持しています。
-- macOS Apple Silicon と Intel の 0.7.0 パッケージを更新しました。
+- Settings に Agent 設定を追加しました。既定の権限、ツール範囲、ネットワークアクセス、最大実行時間を調整できます。
+- Runtime 領域で実行中タスクの状態を確認し、更新や全実行タスクの停止ができます。
+- Runtime 状態に Hermes データディレクトリを表示し、ローカル Agent 認証や実行環境の確認をしやすくしました。
+- 会話サイドバーは実行中、待機中、失敗、停止の状態だけを表示し、完了済み会話の灰色チェックを表示しません。
+- macOS Apple Silicon と Intel の 0.8.0 パッケージを更新しました。
 - WeChat と Hermes のワークフローは引き続き中心です。タスク送信、会話継続、結果ファイル受信に使えます。
 - 結果は単なる返答ではなく、過程、結論、表、ファイル、次のアクションまで同じ会話に残ります。
 
@@ -81,9 +82,9 @@ Agent が何をしているかを画面上で確認できます。ページを�
 
 読み取り、検索、要約、ファイル作成など、Agent が実行した操作を確認できます。
 
-### Private Browser Control
+### Agent 設定と Runtime 制御
 
-Web が必要なタスクでは、Agent が分離されたプライベートブラウザを操作できます。ページを開く、読む、クリックするなどの操作は実行過程に残り、生成ファイルや回答と同じ会話に結び付きます。タスク終了後はブラウザセッションを閉じられるため、普段のブラウザ状態との重なりを減らせます。
+MyCodex では、Agent の実行方法と利用できる範囲をユーザーが直接調整できます。既定の権限、ツール範囲、ネットワークアクセス、最大実行時間を設定でき、Settings から実行中タスクの更新や全停止もできます。Hermes データディレクトリも表示され、ローカル認証や runtime の確認に使えます。
 
 ### ファイルプレビュー
 
@@ -125,9 +126,9 @@ Grok、Nous、ChatGPT / Codex、Gemini、MiniMax、Qwen、GitHub Copilot、Claud
 
 ソースコードはまだ公開していません。まずはパッケージ済みインストーラを配布しています。
 
-- macOS Apple Silicon: `MyCodex-0.7.0-mac-arm64.dmg` または `MyCodex-0.7.0-mac-arm64.zip`
-- macOS Intel: `MyCodex-0.7.0-mac-x64.dmg` または `MyCodex-0.7.0-mac-x64.zip`
-- Windows x64: 0.7.0 の Windows アセットは Windows runtime の target build が準備できた後に追加予定です。現時点では過去 Release の portable パッケージを使用してください。
+- macOS Apple Silicon: `MyCodex-0.8.0-mac-arm64.dmg` または `MyCodex-0.8.0-mac-arm64.zip`
+- macOS Intel: `MyCodex-0.8.0-mac-x64.dmg` または `MyCodex-0.8.0-mac-x64.zip`
+- Windows x64: 0.8.0 の Windows アセットは Windows runtime の target build が準備できた後に追加予定です。現時点では過去 Release の portable パッケージを使用してください。
 
 [GitHub Releases](https://github.com/guo2001china/mycodex/releases) からダウンロードできます。
 

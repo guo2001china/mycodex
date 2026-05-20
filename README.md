@@ -25,12 +25,13 @@ You do not need to start with tokens, command lines, model routing, or environme
   <a href="#community">Community</a>
 </p>
 
-## v0.7.0 Highlights
+## v0.8.0 Highlights
 
-- Private Browser Control is now part of the desktop workflow: Agents can open and operate an isolated browser session for web tasks without mixing with the user's everyday browser state.
-- Browser-driven tasks now keep clearer process records, so navigation, page reads, and interactions can stay visible in the conversation.
-- The 0.6.1 connection-stability work remains in place: cloud auth requests use explicit timeouts, safe retries, and the production MyCodex cloud connection config.
-- macOS Apple Silicon and Intel packages are refreshed for 0.7.0.
+- Agent settings are now exposed in Settings: adjust default permissions, tool scope, network access, and maximum run time before tasks start.
+- Runtime management is clearer: Settings shows active task state, supports refresh, and can stop all running tasks.
+- Hermes runtime details now include the data directory, making local Agent authentication and runtime troubleshooting easier.
+- Conversation history is quieter: only running, waiting, failed, and stopped conversations show status markers.
+- macOS Apple Silicon and Intel packages are refreshed for 0.8.0.
 - WeChat and Hermes remain the main workflow: send tasks, continue conversations, and receive result files without staying at your desk.
 - Results are more than chat replies: process, conclusions, tables, files, and next steps stay in the same conversation.
 
@@ -159,14 +160,15 @@ If the user wants to check the work, the execution process can be expanded.
 
 This answers a practical question: what did the Agent actually do?
 
-### 8. Private Browser Control
+### 8. Agent Settings and Runtime Control
 
-When a task needs the web, MyCodex can let the Agent drive a private browser session instead of relying on the user's everyday browser.
+MyCodex now gives users more control over how the Agent runs and what it can use.
 
-- Open pages in an isolated task browser.
-- Keep navigation, reads, clicks, and page interactions visible in the execution process.
-- Use web pages as working context while keeping local artifacts tied to the same conversation.
-- Close the browser session when the task is done, reducing overlap with the user's normal browsing state.
+- Set default Agent permissions, tool scope, network access, and maximum run time.
+- Check active runtime tasks from Settings.
+- Refresh current task state or stop all running tasks.
+- See the Hermes data directory for local authentication and runtime debugging.
+- Keep run artifacts under the current project in per-run folders.
 
 ### 9. File Preview
 
@@ -265,9 +267,9 @@ Source code is not published yet. This repository currently provides packaged in
 
 Current release:
 
-- macOS Apple Silicon: `MyCodex-0.7.0-mac-arm64.dmg` or `MyCodex-0.7.0-mac-arm64.zip`.
-- macOS Intel: `MyCodex-0.7.0-mac-x64.dmg` or `MyCodex-0.7.0-mac-x64.zip`.
-- Windows x64: the 0.7.0 Windows asset will be attached after the target-OS runtime build is ready. Use the historical portable package for now.
+- macOS Apple Silicon: `MyCodex-0.8.0-mac-arm64.dmg` or `MyCodex-0.8.0-mac-arm64.zip`.
+- macOS Intel: `MyCodex-0.8.0-mac-x64.dmg` or `MyCodex-0.8.0-mac-x64.zip`.
+- Windows x64: the 0.8.0 Windows asset will be attached after the target-OS runtime build is ready. Use the historical portable package for now.
 
 Download from [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
 
@@ -286,14 +288,14 @@ MyCodex is still moving quickly. Public issues are used for roadmap signals, ins
 
 macOS:
 
-1. Apple Silicon users download `MyCodex-0.7.0-mac-arm64.dmg`; Intel users download `MyCodex-0.7.0-mac-x64.dmg`.
+1. Apple Silicon users download `MyCodex-0.8.0-mac-arm64.dmg`; Intel users download `MyCodex-0.8.0-mac-x64.dmg`.
 2. Open the dmg.
 3. Drag `MyCodex.app` into Applications.
 4. Launch, log in, connect a model, and start sending tasks.
 
 Windows:
 
-1. Download the Windows x64 portable package from Releases when the 0.7.0 Windows asset is attached.
+1. Download the Windows x64 portable package from Releases when the 0.8.0 Windows asset is attached.
 2. Extract the whole folder.
 3. Run `MyCodex.exe`.
 
