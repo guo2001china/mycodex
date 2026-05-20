@@ -269,7 +269,7 @@ MyCodex 现在把 Agent 运行方式和可用范围交给用户直接控制。
 
 - macOS Apple Silicon：`MyCodex-0.8.0-mac-arm64.dmg` 和 `MyCodex-0.8.0-mac-arm64.zip`。
 - macOS Intel：`MyCodex-0.8.0-mac-x64.dmg` 和 `MyCodex-0.8.0-mac-x64.zip`。
-- Windows x64：0.8.0 Windows 资产会在目标 Windows 环境 runtime build 准备好以后补充。当前可先使用历史 Release 中的 portable 包。
+- Windows x64：`MyCodex-0.8.0-win-x64.zip`。
 
 请到 [GitHub Releases](https://github.com/guo2001china/mycodex/releases) 下载。
 
@@ -295,7 +295,7 @@ macOS：
 
 Windows：
 
-1. 等 0.8.0 Windows 资产补齐后，到 Releases 下载 Windows x64 portable 包。
+1. 到 Releases 下载 `MyCodex-0.8.0-win-x64.zip`。
 2. 解压整个文件夹。
 3. 运行解压目录里的 `MyCodex.exe`。
 

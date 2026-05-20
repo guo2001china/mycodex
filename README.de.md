@@ -121,7 +121,7 @@ Der Quellcode ist noch nicht veröffentlicht. Aktuell gibt es zuerst gepackte In
 
 - macOS Apple Silicon: `MyCodex-0.8.0-mac-arm64.dmg` oder `MyCodex-0.8.0-mac-arm64.zip`
 - macOS Intel: `MyCodex-0.8.0-mac-x64.dmg` oder `MyCodex-0.8.0-mac-x64.zip`
-- Windows x64: Das Windows-Asset für 0.8.0 folgt nach dem Target-Build der Windows-Runtime. Bis dahin das portable Paket aus einem früheren Release nutzen.
+- Windows x64: `MyCodex-0.8.0-win-x64.zip`
 
 Download über [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
 

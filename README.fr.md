@@ -121,7 +121,7 @@ Le code source n'est pas encore publié. Le dépôt fournit d'abord des installa
 
 - macOS Apple Silicon : `MyCodex-0.8.0-mac-arm64.dmg` ou `MyCodex-0.8.0-mac-arm64.zip`
 - macOS Intel : `MyCodex-0.8.0-mac-x64.dmg` ou `MyCodex-0.8.0-mac-x64.zip`
-- Windows x64 : l'asset Windows 0.8.0 sera ajouté après le build cible du runtime Windows. Pour l'instant, utilisez le package portable d'un ancien Release.
+- Windows x64 : `MyCodex-0.8.0-win-x64.zip`
 
 Téléchargement via [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
 

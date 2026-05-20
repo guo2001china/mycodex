@@ -129,7 +129,7 @@ Grok, Nous, ChatGPT / Codex, Gemini, MiniMax, Qwen, GitHub Copilot, Claude Max �
 
 - macOS Apple Silicon: `MyCodex-0.8.0-mac-arm64.dmg` 또는 `MyCodex-0.8.0-mac-arm64.zip`
 - macOS Intel: `MyCodex-0.8.0-mac-x64.dmg` 또는 `MyCodex-0.8.0-mac-x64.zip`
-- Windows x64: 0.8.0 Windows asset은 Windows runtime target build가 준비된 뒤 추가할 예정입니다. 지금은 이전 Release의 portable 패키지를 사용하세요.
+- Windows x64: `MyCodex-0.8.0-win-x64.zip`
 
 [GitHub Releases](https://github.com/guo2001china/mycodex/releases)에서 받을 수 있습니다.
 

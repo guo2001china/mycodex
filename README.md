@@ -269,7 +269,7 @@ Current release:
 
 - macOS Apple Silicon: `MyCodex-0.8.0-mac-arm64.dmg` or `MyCodex-0.8.0-mac-arm64.zip`.
 - macOS Intel: `MyCodex-0.8.0-mac-x64.dmg` or `MyCodex-0.8.0-mac-x64.zip`.
-- Windows x64: the 0.8.0 Windows asset will be attached after the target-OS runtime build is ready. Use the historical portable package for now.
+- Windows x64: `MyCodex-0.8.0-win-x64.zip`.
 
 Download from [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
 
@@ -295,7 +295,7 @@ macOS:
 
 Windows:
 
-1. Download the Windows x64 portable package from Releases when the 0.8.0 Windows asset is attached.
+1. Download `MyCodex-0.8.0-win-x64.zip` from Releases.
 2. Extract the whole folder.
 3. Run `MyCodex.exe`.
 
