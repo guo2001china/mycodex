@@ -6,12 +6,12 @@
 
 MyCodex는 Codex + Hermes를 일반 사용자도 바로 열어 쓸 수 있는 작업 공간으로 묶었습니다. 앱을 열고 원하는 결과를 말하면 Agent가 작업을 실행하고, 과정을 보여주고, 결과 파일을 남깁니다. WeChat을 연결하면 컴퓨터 앞에 없을 때도 휴대폰에서 작업을 보내고 파일을 받을 수 있습니다.
 
-## v0.6.1 주요 내용
+## v0.7.0 주요 내용
 
-- cloud auth 연결에 명시적인 타임아웃과 안전한 재시도를 추가해 짧은 네트워크 장애에 더 강해졌습니다.
-- 배포용 데스크톱 패키지에 운영 MyCodex 연결 설정을 포함해 첫 실행 시 잘못된 로컬 개발 주소로 연결되는 문제를 줄였습니다.
-- Windows 안정 운영을 위한 흐름이 추가되었습니다. 전체 zip 구조, runtime 위치, 패키지 설정을 릴리스 전에 검사합니다.
-- macOS Apple Silicon과 Intel 패키지를 0.6.1로 새로 빌드했습니다.
+- Private Browser Control을 추가했습니다. Agent가 일상 브라우저 상태와 섞이지 않는 분리된 브라우저 세션을 열고 웹 작업을 수행할 수 있습니다.
+- 브라우저 기반 작업은 탐색, 페이지 읽기, 상호작용을 대화 안의 실행 기록으로 더 명확하게 남깁니다.
+- 0.6.1의 연결 안정성 개선은 계속 유지됩니다. cloud auth 타임아웃, 안전한 재시도, 운영 MyCodex 연결 설정을 사용합니다.
+- macOS Apple Silicon과 Intel 패키지를 0.7.0으로 새로 빌드했습니다.
 - WeChat과 Hermes 워크플로는 계속 핵심입니다. 작업 전송, 대화 이어가기, 결과 파일 수신에 사용할 수 있습니다.
 - 결과는 단순한 답변이 아니라 과정, 결론, 표, 파일, 다음 행동까지 같은 대화에 남습니다.
 
@@ -82,6 +82,10 @@ Agent가 지금 무엇을 하는지 볼 수 있습니다. 새로고침하거나 
 
 읽기, 검색, 요약, 파일 작성 등 Agent가 수행한 작업을 펼쳐서 확인할 수 있습니다.
 
+### Private Browser Control
+
+웹이 필요한 작업에서는 Agent가 분리된 비공개 브라우저 세션을 조작할 수 있습니다. 페이지 열기, 읽기, 클릭 같은 동작은 실행 과정에 남고, 생성 파일과 답변은 같은 대화에 묶입니다. 작업이 끝나면 브라우저 세션을 닫아 평소 브라우저 상태와의 겹침을 줄일 수 있습니다.
+
 ### 파일 미리보기
 
 <img src="assets/screenshots/desktop-file-preview.jpg" alt="MyCodex file preview" width="900">
@@ -122,9 +126,9 @@ Grok, Nous, ChatGPT / Codex, Gemini, MiniMax, Qwen, GitHub Copilot, Claude Max �
 
 소스 코드는 아직 공개하지 않습니다. 현재는 패키징된 설치 파일을 먼저 제공합니다.
 
-- macOS Apple Silicon: `MyCodex-0.6.1-mac-arm64.dmg` 또는 `MyCodex-0.6.1-mac-arm64.zip`
-- macOS Intel: `MyCodex-0.6.1-mac-x64.dmg` 또는 `MyCodex-0.6.1-mac-x64.zip`
-- Windows x64: 0.6.1에는 Windows 안정 운영 개선이 포함되어 있지만, 배포용 Windows zip은 Windows runtime target build가 준비된 뒤 추가할 예정입니다. 지금은 이전 Release의 portable 패키지를 사용하세요.
+- macOS Apple Silicon: `MyCodex-0.7.0-mac-arm64.dmg` 또는 `MyCodex-0.7.0-mac-arm64.zip`
+- macOS Intel: `MyCodex-0.7.0-mac-x64.dmg` 또는 `MyCodex-0.7.0-mac-x64.zip`
+- Windows x64: 0.7.0 Windows asset은 Windows runtime target build가 준비된 뒤 추가할 예정입니다. 지금은 이전 Release의 portable 패키지를 사용하세요.
 
 [GitHub Releases](https://github.com/guo2001china/mycodex/releases)에서 받을 수 있습니다.
 

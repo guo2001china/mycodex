@@ -6,12 +6,12 @@ Codex + Hermes für alle: weniger Token-Stress, weniger fragile Setups, ein stab
 
 MyCodex verpackt Codex + Hermes als Desktop-Arbeitsplatz. Du öffnest die App, beschreibst das gewünschte Ergebnis, und der Agent führt die Aufgabe aus, zeigt den Ablauf und speichert Ergebnisdateien. Über WeChat lassen sich Aufgaben auch vom Smartphone aus senden und Dateien zurückerhalten.
 
-## v0.6.1
+## v0.7.0
 
-- Cloud-auth-Verbindungen haben jetzt klare Timeouts und sichere Retries bei kurzen Netzwerkfehlern.
-- Downloadbare Desktop-Pakete enthalten die produktive MyCodex-Verbindungsadresse und fallen nicht mehr auf lokale Entwicklungswerte zurück.
-- Der Windows-Betrieb ist robuster: vollständige zip-Struktur, Runtime-Platzierung und Paketkonfiguration werden vor einem Windows-Asset geprüft.
-- macOS Apple Silicon und Intel wurden als 0.6.1 neu gebaut.
+- Private Browser Control ist neu: Der Agent kann für Web-Aufgaben eine isolierte Browsersitzung öffnen und steuern, ohne den normalen Browserzustand des Nutzers zu vermischen.
+- Browser-Aufgaben hinterlassen klarere Prozessdaten, sodass Navigation, Seitenlesen und Interaktionen in der Unterhaltung sichtbar bleiben.
+- Die Stabilitätsarbeit aus 0.6.1 bleibt aktiv: Cloud-auth-Timeouts, sichere Retries und die produktive MyCodex-Verbindungsadresse sind weiter enthalten.
+- macOS Apple Silicon und Intel wurden als 0.7.0 neu gebaut.
 - WeChat und Hermes bleiben der Kern-Workflow: Aufgaben senden, Gespräche fortsetzen, Ergebnisdateien empfangen.
 - Ergebnisse bleiben als Arbeitsnachweis erhalten: Ablauf, Fazit, Tabellen, Dateien und nächste Schritte in derselben Unterhaltung.
 
@@ -76,6 +76,10 @@ MyCodex zeigt Markdown, Tabellen, Links, Anhänge und generierte Dateien in ders
 
 Lesen, Suchen, Zusammenfassen, Schreiben von Dateien und berührte Pfade lassen sich einsehen.
 
+### Private Browser Control
+
+Wenn eine Aufgabe das Web braucht, kann der Agent eine getrennte private Browsersitzung steuern. Öffnen, Lesen, Klicken und andere Seitenaktionen bleiben im Ablauf sichtbar, während Antworten und Dateien derselben Unterhaltung zugeordnet werden. Nach der Aufgabe kann die Sitzung geschlossen werden, damit sie sich weniger mit dem normalen Browserzustand überschneidet.
+
 ### Dateivorschau
 
 <img src="assets/screenshots/desktop-file-preview.jpg" alt="MyCodex file preview" width="900">
@@ -114,9 +118,9 @@ Wer eigene API Keys nutzt, kann Provider, Modell, API Key, Base URL und Standard
 
 Der Quellcode ist noch nicht veröffentlicht. Aktuell gibt es zuerst gepackte Installer.
 
-- macOS Apple Silicon: `MyCodex-0.6.1-mac-arm64.dmg` oder `MyCodex-0.6.1-mac-arm64.zip`
-- macOS Intel: `MyCodex-0.6.1-mac-x64.dmg` oder `MyCodex-0.6.1-mac-x64.zip`
-- Windows x64: 0.6.1 enthält Windows-Stabilitätsarbeit, aber das downloadbare Windows-zip folgt nach dem Target-Build der Windows-Runtime. Bis dahin das portable Paket aus einem früheren Release nutzen.
+- macOS Apple Silicon: `MyCodex-0.7.0-mac-arm64.dmg` oder `MyCodex-0.7.0-mac-arm64.zip`
+- macOS Intel: `MyCodex-0.7.0-mac-x64.dmg` oder `MyCodex-0.7.0-mac-x64.zip`
+- Windows x64: Das Windows-Asset für 0.7.0 folgt nach dem Target-Build der Windows-Runtime. Bis dahin das portable Paket aus einem früheren Release nutzen.
 
 Download über [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
 
