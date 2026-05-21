@@ -31,7 +31,7 @@ You do not need to start with tokens, command lines, model routing, or environme
 - The Control page now shows browser extension status, active sessions, extension version, and recent actions.
 - The conversation composer includes a browser tool entry for tasks that need real page interaction.
 - Browser extension pages can open directly from the desktop app instead of asking users to find an extension folder manually.
-- macOS Apple Silicon and Intel packages are refreshed for 0.9.0.
+- macOS Apple Silicon, macOS Intel, and Windows x64 packages are refreshed for 0.9.0.
 - WeChat and Hermes remain the main workflow: send tasks, continue conversations, and receive result files without staying at your desk.
 - Results are more than chat replies: process, conclusions, tables, files, and next steps stay in the same conversation.
 
@@ -269,7 +269,7 @@ Current release:
 
 - macOS Apple Silicon: `MyCodex-0.9.0-mac-arm64.dmg` or `MyCodex-0.9.0-mac-arm64.zip`.
 - macOS Intel: `MyCodex-0.9.0-mac-x64.dmg` or `MyCodex-0.9.0-mac-x64.zip`.
-- Windows x64: the 0.9.0 Windows asset will be attached after the target-OS runtime build is ready. Use `MyCodex-0.8.0-win-x64.zip` for now.
+- Windows x64: `MyCodex-0.9.0-win-x64.zip`.
 
 Download from [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
 
@@ -295,7 +295,7 @@ macOS:
 
 Windows:
 
-1. Download `MyCodex-0.8.0-win-x64.zip` from Releases until the 0.9.0 Windows package is attached.
+1. Download `MyCodex-0.9.0-win-x64.zip` from Releases.
 2. Extract the whole folder.
 3. Run `MyCodex.exe`.
 

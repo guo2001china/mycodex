@@ -31,7 +31,7 @@ MyCodex 做的事情很简单：把 Codex + Hermes 包成一个普通人能直�
 - 控制页新增浏览器插件区域，展示连接状态、活动会话、扩展版本和最近动作。
 - 对话输入区新增浏览器工具入口，用于提示 Agent 执行需要真实页面交互的任务。
 - 浏览器扩展页面可从桌面端直接打开，不再依赖用户手动查找扩展目录。
-- macOS Apple Silicon 和 Intel 安装包已刷新到 0.9.0。
+- macOS Apple Silicon、macOS Intel 和 Windows x64 安装包已刷新到 0.9.0。
 - 微信和 Hermes 仍是主工作流：发任务、继续对话、收结果文件，不用一直守在电脑前。
 - 结果不只是一段回复：过程、结论、表格、文件和下一步动作都会留在同一个对话里。
 
@@ -269,7 +269,7 @@ MyCodex 现在可以通过桌面端管理的浏览器扩展，把 Agent 接到�
 
 - macOS Apple Silicon：`MyCodex-0.9.0-mac-arm64.dmg` 和 `MyCodex-0.9.0-mac-arm64.zip`。
 - macOS Intel：`MyCodex-0.9.0-mac-x64.dmg` 和 `MyCodex-0.9.0-mac-x64.zip`。
-- Windows x64：0.9.0 Windows 资产会在目标 Windows 环境 runtime build 准备好以后补充。当前可先使用 `MyCodex-0.8.0-win-x64.zip`。
+- Windows x64：`MyCodex-0.9.0-win-x64.zip`。
 
 请到 [GitHub Releases](https://github.com/guo2001china/mycodex/releases) 下载。
 
@@ -295,7 +295,7 @@ macOS：
 
 Windows：
 
-1. 0.9.0 Windows 包补齐前，到 Releases 下载 `MyCodex-0.8.0-win-x64.zip`。
+1. 到 Releases 下载 `MyCodex-0.9.0-win-x64.zip`。
 2. 解压整个文件夹。
 3. 运行解压目录里的 `MyCodex.exe`。
 

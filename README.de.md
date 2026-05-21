@@ -12,7 +12,7 @@ MyCodex verpackt Codex + Hermes als Desktop-Arbeitsplatz. Du öffnest die App, b
 - Die Control-Seite zeigt Browsererweiterungsstatus, aktive Sitzungen, Erweiterungsversion und letzte Aktionen.
 - Der Conversation Composer enthält einen Browser-Tool-Einstieg für Aufgaben mit echter Seiteninteraktion.
 - Browsererweiterungsseiten können direkt aus der Desktop-App geöffnet werden, ohne dass Nutzer den Erweiterungsordner manuell suchen müssen.
-- macOS Apple Silicon und Intel wurden als 0.9.0 neu gebaut.
+- macOS Apple Silicon, macOS Intel und Windows x64 wurden als 0.9.0 neu gebaut.
 - WeChat und Hermes bleiben der Kern-Workflow: Aufgaben senden, Gespräche fortsetzen, Ergebnisdateien empfangen.
 - Ergebnisse bleiben als Arbeitsnachweis erhalten: Ablauf, Fazit, Tabellen, Dateien und nächste Schritte in derselben Unterhaltung.
 
@@ -121,7 +121,7 @@ Der Quellcode ist noch nicht veröffentlicht. Aktuell gibt es zuerst gepackte In
 
 - macOS Apple Silicon: `MyCodex-0.9.0-mac-arm64.dmg` oder `MyCodex-0.9.0-mac-arm64.zip`
 - macOS Intel: `MyCodex-0.9.0-mac-x64.dmg` oder `MyCodex-0.9.0-mac-x64.zip`
-- Windows x64: Das Windows-Asset für 0.9.0 folgt nach dem Target-Build der Windows-Runtime. Bis dahin `MyCodex-0.8.0-win-x64.zip` nutzen.
+- Windows x64: `MyCodex-0.9.0-win-x64.zip`
 
 Download über [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
 

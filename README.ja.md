@@ -12,7 +12,7 @@ MyCodex は Codex + Hermes を、普通のユーザーがそのまま使える�
 - Control ページにブラウザ拡張エリアを追加し、接続状態、アクティブセッション、拡張バージョン、最近の操作を確認できます。
 - 会話入力欄にブラウザツール入口を追加し、実ページ操作が必要なタスクを Agent に伝えやすくしました。
 - ブラウザ拡張ページをデスクトップアプリから直接開けるようになり、拡張フォルダを手動で探す必要が減りました。
-- macOS Apple Silicon と Intel の 0.9.0 パッケージを更新しました。
+- macOS Apple Silicon、macOS Intel、Windows x64 の 0.9.0 パッケージを更新しました。
 - WeChat と Hermes のワークフローは引き続き中心です。タスク送信、会話継続、結果ファイル受信に使えます。
 - 結果は単なる返答ではなく、過程、結論、表、ファイル、次のアクションまで同じ会話に残ります。
 
@@ -128,7 +128,7 @@ Grok、Nous、ChatGPT / Codex、Gemini、MiniMax、Qwen、GitHub Copilot、Claud
 
 - macOS Apple Silicon: `MyCodex-0.9.0-mac-arm64.dmg` または `MyCodex-0.9.0-mac-arm64.zip`
 - macOS Intel: `MyCodex-0.9.0-mac-x64.dmg` または `MyCodex-0.9.0-mac-x64.zip`
-- Windows x64: 0.9.0 の Windows アセットは Windows runtime の target build が準備できた後に追加予定です。現時点では `MyCodex-0.8.0-win-x64.zip` を使用してください。
+- Windows x64: `MyCodex-0.9.0-win-x64.zip`
 
 [GitHub Releases](https://github.com/guo2001china/mycodex/releases) からダウンロードできます。
 
