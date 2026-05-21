@@ -6,13 +6,13 @@ Codex + Hermes pour tout le monde : moins de friction autour des tokens, moins d
 
 MyCodex transforme Codex + Hermes en espace de travail desktop. Vous ouvrez l'application, décrivez le résultat attendu, puis l'Agent exécute la tâche, affiche le déroulé et conserve les fichiers produits. Avec WeChat connecté, vous pouvez aussi envoyer des tâches et recevoir des fichiers depuis le téléphone.
 
-## v0.8.0
+## v0.9.0
 
-- Les paramètres ajoutent une configuration Agent : permissions par défaut, périmètre des outils, accès réseau et durée maximale d'exécution.
-- La zone Runtime affiche les tâches actives, permet de rafraîchir l'état et d'arrêter toutes les tâches en cours.
-- L'état Runtime affiche le répertoire de données Hermes pour faciliter le diagnostic de l'authentification locale et de l'environnement d'exécution.
-- La liste des conversations n'affiche des marqueurs que pour les états en cours, en attente, en échec ou arrêtés.
-- Les packages macOS Apple Silicon et Intel sont reconstruits en 0.8.0.
+- Real Browser Control est ajouté : l'extension navigateur MyCodex peut être installée et ouverte depuis l'application desktop afin que l'Agent agisse dans une session navigateur contrôlée.
+- La page Control affiche l'état de l'extension, les sessions actives, la version de l'extension et les actions récentes.
+- Le composer de conversation ajoute une entrée d'outil navigateur pour les tâches qui nécessitent une interaction réelle avec une page.
+- Les pages de l'extension navigateur peuvent être ouvertes directement depuis l'application desktop, sans demander à l'utilisateur de trouver le dossier d'extension.
+- Les packages macOS Apple Silicon et Intel sont reconstruits en 0.9.0.
 - WeChat et Hermes restent le workflow principal : envoyer des tâches, continuer une conversation, recevoir les fichiers de résultat.
 - Les résultats ne sont pas seulement une réponse : déroulé, conclusion, tableaux, fichiers et prochaines actions restent dans la même conversation.
 
@@ -77,9 +77,9 @@ MyCodex garde Markdown, tableaux, liens, pièces jointes et fichiers générés 
 
 Lecture, recherche, synthèse, écriture de fichiers et chemins touchés peuvent être inspectés.
 
-### Configuration Agent et contrôle Runtime
+### Real Browser Control
 
-MyCodex donne plus de contrôle sur la manière dont l'Agent s'exécute et sur les outils qu'il peut utiliser. Les permissions, le périmètre des outils, l'accès réseau et la durée maximale sont configurables. Depuis les paramètres, il est possible de rafraîchir les tâches Runtime actives ou de les arrêter, et le répertoire de données Hermes aide au diagnostic local.
+MyCodex peut connecter l'Agent à une vraie session navigateur via l'extension gérée par l'application desktop. L'état de connexion, la session active, la version de l'extension et les actions récentes sont visibles, et les tâches avec outil navigateur peuvent partir du composer.
 
 ### Aperçu de fichiers
 
@@ -119,9 +119,9 @@ Les utilisateurs avec leurs propres API Keys peuvent choisir le fournisseur, le 
 
 Le code source n'est pas encore publié. Le dépôt fournit d'abord des installateurs packagés.
 
-- macOS Apple Silicon : `MyCodex-0.8.0-mac-arm64.dmg` ou `MyCodex-0.8.0-mac-arm64.zip`
-- macOS Intel : `MyCodex-0.8.0-mac-x64.dmg` ou `MyCodex-0.8.0-mac-x64.zip`
-- Windows x64 : `MyCodex-0.8.0-win-x64.zip`
+- macOS Apple Silicon : `MyCodex-0.9.0-mac-arm64.dmg` ou `MyCodex-0.9.0-mac-arm64.zip`
+- macOS Intel : `MyCodex-0.9.0-mac-x64.dmg` ou `MyCodex-0.9.0-mac-x64.zip`
+- Windows x64 : l'asset Windows 0.9.0 sera ajouté après le build cible du runtime Windows. Pour l'instant, utilisez `MyCodex-0.8.0-win-x64.zip`.
 
 Téléchargement via [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
 

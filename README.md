@@ -25,13 +25,13 @@ You do not need to start with tokens, command lines, model routing, or environme
   <a href="#community">Community</a>
 </p>
 
-## v0.8.0 Highlights
+## v0.9.0 Highlights
 
-- Agent settings are now exposed in Settings: adjust default permissions, tool scope, network access, and maximum run time before tasks start.
-- Runtime management is clearer: Settings shows active task state, supports refresh, and can stop all running tasks.
-- Hermes runtime details now include the data directory, making local Agent authentication and runtime troubleshooting easier.
-- Conversation history is quieter: only running, waiting, failed, and stopped conversations show status markers.
-- macOS Apple Silicon and Intel packages are refreshed for 0.8.0.
+- Real Browser Control is now available: install and open the MyCodex browser extension from the desktop app, then let the Agent operate pages in a controlled browser session.
+- The Control page now shows browser extension status, active sessions, extension version, and recent actions.
+- The conversation composer includes a browser tool entry for tasks that need real page interaction.
+- Browser extension pages can open directly from the desktop app instead of asking users to find an extension folder manually.
+- macOS Apple Silicon and Intel packages are refreshed for 0.9.0.
 - WeChat and Hermes remain the main workflow: send tasks, continue conversations, and receive result files without staying at your desk.
 - Results are more than chat replies: process, conclusions, tables, files, and next steps stay in the same conversation.
 
@@ -160,15 +160,15 @@ If the user wants to check the work, the execution process can be expanded.
 
 This answers a practical question: what did the Agent actually do?
 
-### 8. Agent Settings and Runtime Control
+### 8. Real Browser Control
 
-MyCodex now gives users more control over how the Agent runs and what it can use.
+MyCodex can now connect the Agent to a real browser session through the desktop-managed browser extension.
 
-- Set default Agent permissions, tool scope, network access, and maximum run time.
-- Check active runtime tasks from Settings.
-- Refresh current task state or stop all running tasks.
-- See the Hermes data directory for local authentication and runtime debugging.
-- Keep run artifacts under the current project in per-run folders.
+- Install and open the MyCodex browser extension from the desktop app.
+- Check browser bridge connection status, active session, extension version, and recent actions.
+- Use the browser tool entry from the conversation composer for tasks that need page interaction.
+- Keep browser session context available to the Agent while preserving the conversation record.
+- Store extension resources inside the desktop package and use a stable Documents-based install path.
 
 ### 9. File Preview
 
@@ -267,9 +267,9 @@ Source code is not published yet. This repository currently provides packaged in
 
 Current release:
 
-- macOS Apple Silicon: `MyCodex-0.8.0-mac-arm64.dmg` or `MyCodex-0.8.0-mac-arm64.zip`.
-- macOS Intel: `MyCodex-0.8.0-mac-x64.dmg` or `MyCodex-0.8.0-mac-x64.zip`.
-- Windows x64: `MyCodex-0.8.0-win-x64.zip`.
+- macOS Apple Silicon: `MyCodex-0.9.0-mac-arm64.dmg` or `MyCodex-0.9.0-mac-arm64.zip`.
+- macOS Intel: `MyCodex-0.9.0-mac-x64.dmg` or `MyCodex-0.9.0-mac-x64.zip`.
+- Windows x64: the 0.9.0 Windows asset will be attached after the target-OS runtime build is ready. Use `MyCodex-0.8.0-win-x64.zip` for now.
 
 Download from [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
 
@@ -288,14 +288,14 @@ MyCodex is still moving quickly. Public issues are used for roadmap signals, ins
 
 macOS:
 
-1. Apple Silicon users download `MyCodex-0.8.0-mac-arm64.dmg`; Intel users download `MyCodex-0.8.0-mac-x64.dmg`.
+1. Apple Silicon users download `MyCodex-0.9.0-mac-arm64.dmg`; Intel users download `MyCodex-0.9.0-mac-x64.dmg`.
 2. Open the dmg.
 3. Drag `MyCodex.app` into Applications.
 4. Launch, log in, connect a model, and start sending tasks.
 
 Windows:
 
-1. Download `MyCodex-0.8.0-win-x64.zip` from Releases.
+1. Download `MyCodex-0.8.0-win-x64.zip` from Releases until the 0.9.0 Windows package is attached.
 2. Extract the whole folder.
 3. Run `MyCodex.exe`.
 

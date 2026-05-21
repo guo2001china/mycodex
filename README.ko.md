@@ -6,13 +6,13 @@
 
 MyCodex는 Codex + Hermes를 일반 사용자도 바로 열어 쓸 수 있는 작업 공간으로 묶었습니다. 앱을 열고 원하는 결과를 말하면 Agent가 작업을 실행하고, 과정을 보여주고, 결과 파일을 남깁니다. WeChat을 연결하면 컴퓨터 앞에 없을 때도 휴대폰에서 작업을 보내고 파일을 받을 수 있습니다.
 
-## v0.8.0 주요 내용
+## v0.9.0 주요 내용
 
-- Settings에 Agent 설정 영역을 추가했습니다. 기본 권한, 도구 범위, 네트워크 접근, 최대 실행 시간을 조정할 수 있습니다.
-- Runtime 영역에서 실행 중인 작업 상태를 확인하고 새로고침하거나 전체 실행 작업을 중지할 수 있습니다.
-- Runtime 상태에 Hermes 데이터 디렉터리를 표시해 로컬 Agent 인증과 실행 환경 문제를 확인하기 쉬워졌습니다.
-- 대화 사이드바는 실행 중, 대기, 실패, 중지 상태만 표시하고 완료된 대화의 회색 완료 체크는 표시하지 않습니다.
-- macOS Apple Silicon과 Intel 패키지를 0.8.0으로 새로 빌드했습니다.
+- Real Browser Control을 추가했습니다. 데스크톱 앱에서 MyCodex 브라우저 확장을 설치하고 열어 Agent가 제어된 브라우저 세션에서 페이지 작업을 수행할 수 있습니다.
+- Control 페이지에 브라우저 확장 영역을 추가해 연결 상태, 활성 세션, 확장 버전, 최근 동작을 확인할 수 있습니다.
+- 대화 입력 영역에 브라우저 도구 진입점을 추가해 실제 페이지 상호작용이 필요한 작업을 Agent에게 요청하기 쉬워졌습니다.
+- 브라우저 확장 페이지를 데스크톱 앱에서 바로 열 수 있어 사용자가 확장 폴더를 직접 찾을 필요가 줄었습니다.
+- macOS Apple Silicon과 Intel 패키지를 0.9.0으로 새로 빌드했습니다.
 - WeChat과 Hermes 워크플로는 계속 핵심입니다. 작업 전송, 대화 이어가기, 결과 파일 수신에 사용할 수 있습니다.
 - 결과는 단순한 답변이 아니라 과정, 결론, 표, 파일, 다음 행동까지 같은 대화에 남습니다.
 
@@ -83,9 +83,9 @@ Agent가 지금 무엇을 하는지 볼 수 있습니다. 새로고침하거나 
 
 읽기, 검색, 요약, 파일 작성 등 Agent가 수행한 작업을 펼쳐서 확인할 수 있습니다.
 
-### Agent 설정과 Runtime 제어
+### Real Browser Control
 
-MyCodex는 Agent 실행 방식과 사용할 수 있는 범위를 사용자가 직접 조정할 수 있게 합니다. 기본 권한, 도구 범위, 네트워크 접근, 최대 실행 시간을 설정할 수 있고, Settings에서 실행 중 작업을 새로고침하거나 모두 중지할 수 있습니다. Hermes 데이터 디렉터리도 표시되어 로컬 인증과 runtime 문제 확인에 도움이 됩니다.
+MyCodex는 데스크톱에서 관리하는 브라우저 확장을 통해 Agent를 실제 브라우저 세션에 연결할 수 있습니다. 연결 상태, 활성 세션, 확장 버전, 최근 동작을 확인할 수 있고, 대화 입력 영역에서 브라우저 도구를 사용하는 작업을 시작할 수 있습니다.
 
 ### 파일 미리보기
 
@@ -127,9 +127,9 @@ Grok, Nous, ChatGPT / Codex, Gemini, MiniMax, Qwen, GitHub Copilot, Claude Max �
 
 소스 코드는 아직 공개하지 않습니다. 현재는 패키징된 설치 파일을 먼저 제공합니다.
 
-- macOS Apple Silicon: `MyCodex-0.8.0-mac-arm64.dmg` 또는 `MyCodex-0.8.0-mac-arm64.zip`
-- macOS Intel: `MyCodex-0.8.0-mac-x64.dmg` 또는 `MyCodex-0.8.0-mac-x64.zip`
-- Windows x64: `MyCodex-0.8.0-win-x64.zip`
+- macOS Apple Silicon: `MyCodex-0.9.0-mac-arm64.dmg` 또는 `MyCodex-0.9.0-mac-arm64.zip`
+- macOS Intel: `MyCodex-0.9.0-mac-x64.dmg` 또는 `MyCodex-0.9.0-mac-x64.zip`
+- Windows x64: 0.9.0 Windows asset은 Windows runtime target build가 준비된 뒤 추가할 예정입니다. 지금은 `MyCodex-0.8.0-win-x64.zip`을 사용하세요.
 
 [GitHub Releases](https://github.com/guo2001china/mycodex/releases)에서 받을 수 있습니다.
 
