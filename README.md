@@ -25,12 +25,13 @@ You do not need to start with tokens, command lines, model routing, or environme
   <a href="#community">Community</a>
 </p>
 
-## v0.6.1 Highlights
+## v0.9.0 Highlights
 
-- Connection stability is better: cloud auth requests now have explicit timeouts and safe retry behavior for short network failures.
-- Downloadable desktop packages now carry the production MyCodex cloud connection config, reducing first-run failures caused by local development defaults.
-- Windows stable-operation work is in this release line: the release pipeline now checks full Windows zip structure, bundled runtime placement, and packaged config before a Windows build is attached.
-- macOS Apple Silicon and Intel packages are refreshed for 0.6.1.
+- Real Browser Control is now available: install and open the MyCodex browser extension from the desktop app, then let the Agent operate pages in a controlled browser session.
+- The Control page now shows browser extension status, active sessions, extension version, and recent actions.
+- The conversation composer includes a browser tool entry for tasks that need real page interaction.
+- Browser extension pages can open directly from the desktop app instead of asking users to find an extension folder manually.
+- macOS Apple Silicon, macOS Intel, and Windows x64 packages are refreshed for 0.9.0.
 - WeChat and Hermes remain the main workflow: send tasks, continue conversations, and receive result files without staying at your desk.
 - Results are more than chat replies: process, conclusions, tables, files, and next steps stay in the same conversation.
 
@@ -159,7 +160,17 @@ If the user wants to check the work, the execution process can be expanded.
 
 This answers a practical question: what did the Agent actually do?
 
-### 8. File Preview
+### 8. Real Browser Control
+
+MyCodex can now connect the Agent to a real browser session through the desktop-managed browser extension.
+
+- Install and open the MyCodex browser extension from the desktop app.
+- Check browser bridge connection status, active session, extension version, and recent actions.
+- Use the browser tool entry from the conversation composer for tasks that need page interaction.
+- Keep browser session context available to the Agent while preserving the conversation record.
+- Store extension resources inside the desktop package and use a stable Documents-based install path.
+
+### 9. File Preview
 
 <img src="assets/screenshots/desktop-file-preview.jpg" alt="MyCodex file preview" width="900">
 
@@ -175,7 +186,7 @@ Many tasks end with a file, not just a paragraph. MyCodex puts file preview on t
 
 Users can inspect the output before downloading it or opening it elsewhere.
 
-### 9. Mobile
+### 10. Mobile
 
 <img src="assets/screenshots/desktop-mobile-weixin.jpg" alt="MyCodex mobile WeChat entry" width="900">
 
@@ -192,7 +203,7 @@ Mobile is the WeChat entry point, not just another settings screen.
 
 This is useful when a user is away from the computer but wants to send a task now.
 
-### 10. Settings
+### 11. Settings
 
 <img src="assets/screenshots/desktop-settings.jpg" alt="MyCodex settings" width="900">
 
@@ -211,7 +222,7 @@ Settings only contains things that should not interrupt the main workflow: accou
 
 Most users only come here when changing models, checking runtime state, or logging out.
 
-### 11. Subscription Account Setup
+### 12. Subscription Account Setup
 
 <img src="assets/screenshots/desktop-model-subscription.jpg" alt="MyCodex subscription account setup" width="900">
 
@@ -236,7 +247,7 @@ First subscription entries include:
 
 The goal is simple: users who already pay for a subscription should not have to copy keys and tune parameters before running a task.
 
-### 12. API Key Setup
+### 13. API Key Setup
 
 <img src="assets/screenshots/desktop-model-api-key.jpg" alt="MyCodex API Key setup" width="900">
 
@@ -256,9 +267,9 @@ Source code is not published yet. This repository currently provides packaged in
 
 Current release:
 
-- macOS Apple Silicon: `MyCodex-0.6.1-mac-arm64.dmg` or `MyCodex-0.6.1-mac-arm64.zip`.
-- macOS Intel: `MyCodex-0.6.1-mac-x64.dmg` or `MyCodex-0.6.1-mac-x64.zip`.
-- Windows x64: 0.6.1 includes Windows stability work, but the downloadable Windows zip still needs a target-OS runtime build. Use the historical portable package for now; the 0.6.1 Windows asset will be attached after that build is ready.
+- macOS Apple Silicon: `MyCodex-0.9.0-mac-arm64.dmg` or `MyCodex-0.9.0-mac-arm64.zip`.
+- macOS Intel: `MyCodex-0.9.0-mac-x64.dmg` or `MyCodex-0.9.0-mac-x64.zip`.
+- Windows x64: `MyCodex-0.9.0-win-x64.zip`.
 
 Download from [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
 
@@ -277,14 +288,14 @@ MyCodex is still moving quickly. Public issues are used for roadmap signals, ins
 
 macOS:
 
-1. Apple Silicon users download `MyCodex-0.6.1-mac-arm64.dmg`; Intel users download `MyCodex-0.6.1-mac-x64.dmg`.
+1. Apple Silicon users download `MyCodex-0.9.0-mac-arm64.dmg`; Intel users download `MyCodex-0.9.0-mac-x64.dmg`.
 2. Open the dmg.
 3. Drag `MyCodex.app` into Applications.
 4. Launch, log in, connect a model, and start sending tasks.
 
 Windows:
 
-1. Download the Windows x64 portable package from Releases when the 0.6.1 Windows asset is attached.
+1. Download `MyCodex-0.9.0-win-x64.zip` from Releases.
 2. Extract the whole folder.
 3. Run `MyCodex.exe`.
 

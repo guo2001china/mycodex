@@ -33,6 +33,15 @@ MyCodex 干的事说白了很简单：把 Codex + Hermes 打包成一个普通�
 - macOS Apple Silicon 和 Intel 安装包已同步更新至 0.6.1。
 - 微信 + Hermes 依然是主工作流：发任务、跟进对话、拿结果文件，不用守在电脑前。
 - 结果不只是一条回复：执行过程、结论、表格、文件和下一步建议，全都留在同一个对话里，随时翻查。
+## 0.9.0 发布重点
+
+- 新增真实浏览器控制能力：用户可以从桌面端安装并打开 MyCodex 浏览器扩展，让 Agent 在受控浏览器会话里执行页面操作。
+- 控制页新增浏览器插件区域，展示连接状态、活动会话、扩展版本和最近动作。
+- 对话输入区新增浏览器工具入口，用于提示 Agent 执行需要真实页面交互的任务。
+- 浏览器扩展页面可从桌面端直接打开，不再依赖用户手动查找扩展目录。
+- macOS Apple Silicon、macOS Intel 和 Windows x64 安装包已刷新到 0.9.0。
+- 微信和 Hermes 仍是主工作流：发任务、继续对话、收结果文件，不用一直守在电脑前。
+- 结果不只是一段回复：过程、结论、表格、文件和下一步动作都会留在同一个对话里。
 
 ## 解决了什么问题
 
@@ -159,7 +168,17 @@ Agent 开始跑起来之后，页面会实时展示当前在做什么，不让�
 
 这样至少能回答一个实际问题：Agent 到底干了什么，那个文件是不是它真的生成的。
 
-### 8. 文件预览
+### 8. 真实浏览器控制
+
+MyCodex 现在可以通过桌面端管理的浏览器扩展，把 Agent 接到真实浏览器会话中。
+
+- 从桌面端安装并打开 MyCodex 浏览器扩展。
+- 查看浏览器桥接连接状态、活动会话、扩展版本和最近动作。
+- 在对话输入区使用浏览器工具入口，处理需要页面交互的任务。
+- 浏览器会话上下文可以进入 Agent 执行链路，同时保留在对话记录中。
+- 扩展资源随桌面发布包分发，并使用 Documents 下的稳定安装路径。
+
+### 9. 文件预览
 
 <img src="assets/screenshots/desktop-file-preview.jpg" alt="MyCodex 文件预览" width="900">
 
@@ -176,6 +195,7 @@ Agent 开始跑起来之后，页面会实时展示当前在做什么，不让�
 先预览，确认没问题再下载或交付，不用来回折腾。
 
 ### 9. 移动版（微信接入）
+### 10. 移动版
 
 <img src="assets/screenshots/desktop-mobile-weixin.jpg" alt="MyCodex 移动版微信入口" width="900">
 
@@ -192,7 +212,7 @@ Agent 开始跑起来之后，页面会实时展示当前在做什么，不让�
 
 适合"我现在不在电脑前，但想先把任务甩出去"的场景。结果文件回来之后，微信里直接就能拿到，不用再跑回电脑上取。
 
-### 10. 设置页
+### 11. 设置页
 
 <img src="assets/screenshots/desktop-settings.jpg" alt="MyCodex 设置页" width="900">
 
@@ -211,7 +231,7 @@ Agent 开始跑起来之后，页面会实时展示当前在做什么，不让�
 
 日常根本不用常来这里。只有换模型、排查运行问题、退出登录这几种情况才需要打开。
 
-### 11. 订阅账号接入
+### 12. 订阅账号接入
 
 <img src="assets/screenshots/desktop-model-subscription.jpg" alt="MyCodex 订阅账号接入" width="900">
 
@@ -236,7 +256,7 @@ Agent 开始跑起来之后，页面会实时展示当前在做什么，不让�
 
 这条路线的目标很明确：让已经买了订阅的人，少复制 Key、少填参数，直接把任务跑起来。
 
-### 12. API Key 接入
+### 13. API Key 接入
 
 <img src="assets/screenshots/desktop-model-api-key.jpg" alt="MyCodex API Key 接入" width="900">
 
@@ -256,9 +276,9 @@ Agent 开始跑起来之后，页面会实时展示当前在做什么，不让�
 
 当前版本（0.6.1）：
 
-- macOS Apple Silicon：`MyCodex-0.6.1-mac-arm64.dmg` 和 `MyCodex-0.6.1-mac-arm64.zip`
-- macOS Intel：`MyCodex-0.6.1-mac-x64.dmg` 和 `MyCodex-0.6.1-mac-x64.zip`
-- Windows x64：0.6.1 已包含 Windows 稳定运营相关改进，但可下载的 Windows 压缩包还需要在目标 Windows 环境中生成 runtime 后再补充。目前可先使用历史 Release 中的 portable 包。
+- macOS Apple Silicon：`MyCodex-0.9.0-mac-arm64.dmg` 和 `MyCodex-0.9.0-mac-arm64.zip`。
+- macOS Intel：`MyCodex-0.9.0-mac-x64.dmg` 和 `MyCodex-0.9.0-mac-x64.zip`。
+- Windows x64：`MyCodex-0.9.0-win-x64.zip`。
 
 请前往 [GitHub Releases](https://github.com/guo2001china/mycodex/releases) 下载。
 
@@ -277,10 +297,10 @@ MyCodex 还在快速迭代中。公开 issue 用来收集路线图投票、安�
 
 **macOS：**
 
-1. Apple Silicon 机器下载 `MyCodex-0.6.1-mac-arm64.dmg`，Intel 机器下载 `MyCodex-0.6.1-mac-x64.dmg`。
-2. 打开 dmg 文件。
-3. 把 `MyCodex.app` 拖入应用程序文件夹完成安装。
-4. 启动后登录、接入模型，就可以开始发任务了。
+1. Apple Silicon 机器下载 `MyCodex-0.9.0-mac-arm64.dmg`，Intel 机器下载 `MyCodex-0.9.0-mac-x64.dmg`。
+2. 打开 dmg。
+3. 拖拽安装 `MyCodex.app`。
+4. 启动后登录、接入模型、开始发任务。
 
 **Windows：**
 

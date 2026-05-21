@@ -6,12 +6,13 @@ Codex + Hermes für alle: weniger Token-Stress, weniger fragile Setups, ein stab
 
 MyCodex verpackt Codex + Hermes als Desktop-Arbeitsplatz. Du öffnest die App, beschreibst das gewünschte Ergebnis, und der Agent führt die Aufgabe aus, zeigt den Ablauf und speichert Ergebnisdateien. Über WeChat lassen sich Aufgaben auch vom Smartphone aus senden und Dateien zurückerhalten.
 
-## v0.6.1
+## v0.9.0
 
-- Cloud-auth-Verbindungen haben jetzt klare Timeouts und sichere Retries bei kurzen Netzwerkfehlern.
-- Downloadbare Desktop-Pakete enthalten die produktive MyCodex-Verbindungsadresse und fallen nicht mehr auf lokale Entwicklungswerte zurück.
-- Der Windows-Betrieb ist robuster: vollständige zip-Struktur, Runtime-Platzierung und Paketkonfiguration werden vor einem Windows-Asset geprüft.
-- macOS Apple Silicon und Intel wurden als 0.6.1 neu gebaut.
+- Real Browser Control ist neu: Die MyCodex-Browsererweiterung kann aus der Desktop-App installiert und geöffnet werden, damit der Agent Seiten in einer kontrollierten Browsersitzung bedienen kann.
+- Die Control-Seite zeigt Browsererweiterungsstatus, aktive Sitzungen, Erweiterungsversion und letzte Aktionen.
+- Der Conversation Composer enthält einen Browser-Tool-Einstieg für Aufgaben mit echter Seiteninteraktion.
+- Browsererweiterungsseiten können direkt aus der Desktop-App geöffnet werden, ohne dass Nutzer den Erweiterungsordner manuell suchen müssen.
+- macOS Apple Silicon, macOS Intel und Windows x64 wurden als 0.9.0 neu gebaut.
 - WeChat und Hermes bleiben der Kern-Workflow: Aufgaben senden, Gespräche fortsetzen, Ergebnisdateien empfangen.
 - Ergebnisse bleiben als Arbeitsnachweis erhalten: Ablauf, Fazit, Tabellen, Dateien und nächste Schritte in derselben Unterhaltung.
 
@@ -76,6 +77,10 @@ MyCodex zeigt Markdown, Tabellen, Links, Anhänge und generierte Dateien in ders
 
 Lesen, Suchen, Zusammenfassen, Schreiben von Dateien und berührte Pfade lassen sich einsehen.
 
+### Real Browser Control
+
+MyCodex kann den Agent über eine von der Desktop-App verwaltete Browsererweiterung mit einer echten Browsersitzung verbinden. Verbindungsstatus, aktive Sitzung, Erweiterungsversion und letzte Aktionen sind sichtbar, und Aufgaben mit Browser-Tool lassen sich direkt aus dem Composer starten.
+
 ### Dateivorschau
 
 <img src="assets/screenshots/desktop-file-preview.jpg" alt="MyCodex file preview" width="900">
@@ -114,9 +119,9 @@ Wer eigene API Keys nutzt, kann Provider, Modell, API Key, Base URL und Standard
 
 Der Quellcode ist noch nicht veröffentlicht. Aktuell gibt es zuerst gepackte Installer.
 
-- macOS Apple Silicon: `MyCodex-0.6.1-mac-arm64.dmg` oder `MyCodex-0.6.1-mac-arm64.zip`
-- macOS Intel: `MyCodex-0.6.1-mac-x64.dmg` oder `MyCodex-0.6.1-mac-x64.zip`
-- Windows x64: 0.6.1 enthält Windows-Stabilitätsarbeit, aber das downloadbare Windows-zip folgt nach dem Target-Build der Windows-Runtime. Bis dahin das portable Paket aus einem früheren Release nutzen.
+- macOS Apple Silicon: `MyCodex-0.9.0-mac-arm64.dmg` oder `MyCodex-0.9.0-mac-arm64.zip`
+- macOS Intel: `MyCodex-0.9.0-mac-x64.dmg` oder `MyCodex-0.9.0-mac-x64.zip`
+- Windows x64: `MyCodex-0.9.0-win-x64.zip`
 
 Download über [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
 
