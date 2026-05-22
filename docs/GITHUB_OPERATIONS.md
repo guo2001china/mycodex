@@ -42,4 +42,4 @@ GitHub is the public storefront for MyCodex. Treat every page as part of the pro
 - No stale macOS version numbers.
 - Windows package status must be explicit when it lags behind macOS.
 - Screenshots must show real product surfaces, not generic marketing art.
-- Release notes must include downloads, user-visible changes, update metadata, verification, and known limits.
+- Release notes must include downloads, user-visible changes, auto-update status, verification, and known limits. Do not publish raw update metadata endpoint URLs unless users need them for a support case.
