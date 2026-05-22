@@ -44,7 +44,7 @@ body:
     id: version
     attributes:
       label: MyCodex version
-      placeholder: "v0.5.0"
+      placeholder: "v0.9.6"
   - type: dropdown
     id: platform
     attributes:

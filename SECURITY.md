@@ -14,6 +14,12 @@ Download MyCodex only from the official GitHub Releases page:
 
 https://github.com/guo2001china/mycodex/releases
 
+For macOS, prefer the DMG asset for manual installation. ZIP assets are attached for the desktop updater.
+
+Current macOS release notes:
+
+https://github.com/guo2001china/mycodex/blob/main/docs/releases/v0.9.6.md
+
 ## Current Status
 
 MyCodex is an early preview. Test it in non-critical folders and workflows first.

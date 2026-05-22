@@ -16,7 +16,13 @@ MyCodex wraps Codex + Hermes into a desktop workspace that normal users can actu
 You do not need to start with tokens, command lines, model routing, or environment variables. Open MyCodex, describe the result you want, and let the Agent run the task, show the process, and save the output files. When you need to step away from the computer, connect WeChat and let tasks and files come back through your phone.
 
 <p align="center">
+  <img src="assets/screenshots/mycodex-home.jpg" alt="MyCodex desktop workspace" width="900">
+</p>
+
+<p align="center">
   <a href="https://github.com/guo2001china/mycodex/releases">Download MyCodex</a>
+  ·
+  <a href="docs/releases/v0.9.6.md">v0.9.6 notes</a>
   ·
   <a href="#desktop-tour">Desktop tour</a>
   ·
@@ -24,6 +30,28 @@ You do not need to start with tokens, command lines, model routing, or environme
   ·
   <a href="#community">Community</a>
 </p>
+
+## Start Here
+
+| Goal | Link |
+| --- | --- |
+| Download the latest macOS build | [GitHub Releases](https://github.com/guo2001china/mycodex/releases/latest) |
+| Read what changed in 0.9.6 | [Release notes](docs/releases/v0.9.6.md) |
+| See the full desktop workflow | [Desktop tour](#desktop-tour) |
+| Ask for install help | [Installation issue](https://github.com/guo2001china/mycodex/issues/new?template=installation_help.yml) |
+| Request a workflow or provider | [Feature request](https://github.com/guo2001china/mycodex/issues/new?template=feature_request.yml) |
+| Follow the roadmap | [Roadmap issues](https://github.com/guo2001china/mycodex/issues?q=is%3Aissue+is%3Aopen+label%3Aroadmap) |
+
+If MyCodex looks useful, star the repo and watch releases. Stars help more people find the project; release notifications help you avoid stale installers.
+
+## Latest Release
+
+| Platform | Recommended download | Notes |
+| --- | --- | --- |
+| macOS Apple Silicon | [`MyCodex-0.9.6-mac-arm64.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.6/MyCodex-0.9.6-mac-arm64.dmg) | M-series Mac |
+| macOS Intel | [`MyCodex-0.9.6-mac-x64.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.6/MyCodex-0.9.6-mac-x64.dmg) | Intel Mac |
+| macOS auto-update | [`arm64 zip`](https://github.com/guo2001china/mycodex/releases/download/v0.9.6/MyCodex-0.9.6-mac-arm64.zip) / [`x64 zip`](https://github.com/guo2001china/mycodex/releases/download/v0.9.6/MyCodex-0.9.6-mac-x64.zip) | Used by the desktop updater |
+| Windows x64 | [`MyCodex-0.9.0-win-x64.zip`](https://github.com/guo2001china/mycodex/releases/tag/v0.9.0) | Archived package until the Windows runtime build is refreshed |
 
 ## v0.9.6 Highlights
 
@@ -34,6 +62,14 @@ You do not need to start with tokens, command lines, model routing, or environme
 - Windows x64 remains available as the older 0.9.0 package until the Windows runtime build is refreshed.
 - WeChat and Hermes remain the main workflow: send tasks, continue conversations, and receive result files without staying at your desk.
 - Results are more than chat replies: process, conclusions, tables, files, and next steps stay in the same conversation.
+
+## Why People Star It
+
+- Desktop-first: MyCodex keeps the task, process, files, and project history in one place.
+- Token-light: subscription-account paths reduce the need to start with API keys and command-line setup.
+- Mobile-aware: WeChat can send tasks and receive files when the user is away from the computer.
+- Work-record oriented: results, artifacts, and execution details stay attached to the conversation.
+- Built for operators: sales leads, competitor monitoring, operations reports, content research, and assistant workflows are first-class use cases.
 
 ## What It Solves
 

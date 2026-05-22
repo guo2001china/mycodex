@@ -3,6 +3,12 @@ contact_links:
   - name: Download MyCodex
     url: https://github.com/guo2001china/mycodex/releases
     about: Get the latest packaged installers.
+  - name: Read v0.9.6 release notes
+    url: https://github.com/guo2001china/mycodex/blob/main/docs/releases/v0.9.6.md
+    about: See what changed, which installers are current, and what is still pending.
+  - name: Roadmap issues
+    url: https://github.com/guo2001china/mycodex/issues?q=is%3Aissue+is%3Aopen+label%3Aroadmap
+    about: Vote on workflows, model providers, browser automation, and desktop priorities.
   - name: Community QR code
     url: https://github.com/guo2001china/mycodex#community
     about: Add the community contact and write "MyCodex" in the note.
