@@ -25,13 +25,13 @@ You do not need to start with tokens, command lines, model routing, or environme
   <a href="#community">Community</a>
 </p>
 
-## v0.9.0 Highlights
+## v0.9.6 Highlights
 
-- Real Browser Control is now available: install and open the MyCodex browser extension from the desktop app, then let the Agent operate pages in a controlled browser session.
-- The Control page now shows browser extension status, active sessions, extension version, and recent actions.
-- The conversation composer includes a browser tool entry for tasks that need real page interaction.
-- Browser extension pages can open directly from the desktop app instead of asking users to find an extension folder manually.
-- macOS Apple Silicon, macOS Intel, and Windows x64 packages are refreshed for 0.9.0.
+- Desktop window lifecycle handling is steadier: closing the main window no longer leaves stale login callback, update status, or focus dispatch paths behind.
+- Opening MyCodex from an external link, login callback, or second app launch now restores and focuses a live window when one exists.
+- Minimized windows are restored before focus, reducing the “app is running but invisible” failure mode.
+- macOS Apple Silicon and macOS Intel packages are refreshed for 0.9.6.
+- Windows x64 remains available as the older 0.9.0 package until the Windows runtime build is refreshed.
 - WeChat and Hermes remain the main workflow: send tasks, continue conversations, and receive result files without staying at your desk.
 - Results are more than chat replies: process, conclusions, tables, files, and next steps stay in the same conversation.
 
@@ -267,9 +267,9 @@ Source code is not published yet. This repository currently provides packaged in
 
 Current release:
 
-- macOS Apple Silicon: `MyCodex-0.9.0-mac-arm64.dmg` or `MyCodex-0.9.0-mac-arm64.zip`.
-- macOS Intel: `MyCodex-0.9.0-mac-x64.dmg` or `MyCodex-0.9.0-mac-x64.zip`.
-- Windows x64: `MyCodex-0.9.0-win-x64.zip`.
+- macOS Apple Silicon: `MyCodex-0.9.6-mac-arm64.dmg` or `MyCodex-0.9.6-mac-arm64.zip`.
+- macOS Intel: `MyCodex-0.9.6-mac-x64.dmg` or `MyCodex-0.9.6-mac-x64.zip`.
+- Windows x64: `MyCodex-0.9.0-win-x64.zip` remains available from the v0.9.0 release archive.
 
 Download from [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
 
@@ -288,14 +288,14 @@ MyCodex is still moving quickly. Public issues are used for roadmap signals, ins
 
 macOS:
 
-1. Apple Silicon users download `MyCodex-0.9.0-mac-arm64.dmg`; Intel users download `MyCodex-0.9.0-mac-x64.dmg`.
+1. Apple Silicon users download `MyCodex-0.9.6-mac-arm64.dmg`; Intel users download `MyCodex-0.9.6-mac-x64.dmg`.
 2. Open the dmg.
 3. Drag `MyCodex.app` into Applications.
 4. Launch, log in, connect a model, and start sending tasks.
 
 Windows:
 
-1. Download `MyCodex-0.9.0-win-x64.zip` from Releases.
+1. Download the archived `MyCodex-0.9.0-win-x64.zip` from Releases until the Windows 0.9.6 package is refreshed.
 2. Extract the whole folder.
 3. Run `MyCodex.exe`.
 

@@ -6,13 +6,13 @@
 
 MyCodex는 Codex + Hermes를 일반 사용자도 바로 열어 쓸 수 있는 작업 공간으로 묶었습니다. 앱을 열고 원하는 결과를 말하면 Agent가 작업을 실행하고, 과정을 보여주고, 결과 파일을 남깁니다. WeChat을 연결하면 컴퓨터 앞에 없을 때도 휴대폰에서 작업을 보내고 파일을 받을 수 있습니다.
 
-## v0.9.0 주요 내용
+## v0.9.6 주요 내용
 
-- Real Browser Control을 추가했습니다. 데스크톱 앱에서 MyCodex 브라우저 확장을 설치하고 열어 Agent가 제어된 브라우저 세션에서 페이지 작업을 수행할 수 있습니다.
-- Control 페이지에 브라우저 확장 영역을 추가해 연결 상태, 활성 세션, 확장 버전, 최근 동작을 확인할 수 있습니다.
-- 대화 입력 영역에 브라우저 도구 진입점을 추가해 실제 페이지 상호작용이 필요한 작업을 Agent에게 요청하기 쉬워졌습니다.
-- 브라우저 확장 페이지를 데스크톱 앱에서 바로 열 수 있어 사용자가 확장 폴더를 직접 찾을 필요가 줄었습니다.
-- macOS Apple Silicon, macOS Intel, Windows x64 패키지를 0.9.0으로 새로 빌드했습니다.
+- 데스크톱 메인 창 수명 주기 처리를 안정화했습니다. 닫힌 창으로 로그인 콜백, 업데이트 상태, 포커스 처리를 보내지 않습니다.
+- 외부 링크, 로그인 콜백, 두 번째 앱 실행에서는 살아 있는 창을 우선 복원하고 포커스합니다.
+- 최소화된 창은 포커스 전에 복원되어 앱이 실행 중인데 보이지 않는 상황을 줄입니다.
+- macOS Apple Silicon과 macOS Intel 패키지를 0.9.6으로 새로 빌드했습니다.
+- Windows x64는 Windows runtime 빌드가 갱신될 때까지 0.9.0 아카이브 패키지를 제공합니다.
 - WeChat과 Hermes 워크플로는 계속 핵심입니다. 작업 전송, 대화 이어가기, 결과 파일 수신에 사용할 수 있습니다.
 - 결과는 단순한 답변이 아니라 과정, 결론, 표, 파일, 다음 행동까지 같은 대화에 남습니다.
 
@@ -127,9 +127,9 @@ Grok, Nous, ChatGPT / Codex, Gemini, MiniMax, Qwen, GitHub Copilot, Claude Max �
 
 소스 코드는 아직 공개하지 않습니다. 현재는 패키징된 설치 파일을 먼저 제공합니다.
 
-- macOS Apple Silicon: `MyCodex-0.9.0-mac-arm64.dmg` 또는 `MyCodex-0.9.0-mac-arm64.zip`
-- macOS Intel: `MyCodex-0.9.0-mac-x64.dmg` 또는 `MyCodex-0.9.0-mac-x64.zip`
-- Windows x64: `MyCodex-0.9.0-win-x64.zip`
+- macOS Apple Silicon: `MyCodex-0.9.6-mac-arm64.dmg` 또는 `MyCodex-0.9.6-mac-arm64.zip`
+- macOS Intel: `MyCodex-0.9.6-mac-x64.dmg` 또는 `MyCodex-0.9.6-mac-x64.zip`
+- Windows x64: `MyCodex-0.9.0-win-x64.zip`은 v0.9.0 아카이브에서 계속 받을 수 있습니다
 
 [GitHub Releases](https://github.com/guo2001china/mycodex/releases)에서 받을 수 있습니다.
 

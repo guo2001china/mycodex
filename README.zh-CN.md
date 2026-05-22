@@ -25,13 +25,13 @@ MyCodex 做的事情很简单：把 Codex + Hermes 包成一个普通人能直�
   <a href="#加入社群">加入社群</a>
 </p>
 
-## 0.9.0 发布重点
+## 0.9.6 发布重点
 
-- 新增真实浏览器控制能力：用户可以从桌面端安装并打开 MyCodex 浏览器扩展，让 Agent 在受控浏览器会话里执行页面操作。
-- 控制页新增浏览器插件区域，展示连接状态、活动会话、扩展版本和最近动作。
-- 对话输入区新增浏览器工具入口，用于提示 Agent 执行需要真实页面交互的任务。
-- 浏览器扩展页面可从桌面端直接打开，不再依赖用户手动查找扩展目录。
-- macOS Apple Silicon、macOS Intel 和 Windows x64 安装包已刷新到 0.9.0。
+- 桌面主窗口生命周期更稳：窗口关闭后，不再继续把登录回调、更新状态或聚焦动作发给已经失效的窗口。
+- 从外部链接、登录回调或第二次打开应用唤起 MyCodex 时，会优先恢复并聚焦仍然存活的窗口。
+- 最小化窗口被唤起时会先恢复再聚焦，减少“应用已启动但看不到窗口”的情况。
+- macOS Apple Silicon 和 macOS Intel 安装包已刷新到 0.9.6。
+- Windows x64 仍保留 0.9.0 旧版包，等待 Windows runtime 构建刷新后再发布新包。
 - 微信和 Hermes 仍是主工作流：发任务、继续对话、收结果文件，不用一直守在电脑前。
 - 结果不只是一段回复：过程、结论、表格、文件和下一步动作都会留在同一个对话里。
 
@@ -267,9 +267,9 @@ MyCodex 现在可以通过桌面端管理的浏览器扩展，把 Agent 接到�
 
 当前 Release：
 
-- macOS Apple Silicon：`MyCodex-0.9.0-mac-arm64.dmg` 和 `MyCodex-0.9.0-mac-arm64.zip`。
-- macOS Intel：`MyCodex-0.9.0-mac-x64.dmg` 和 `MyCodex-0.9.0-mac-x64.zip`。
-- Windows x64：`MyCodex-0.9.0-win-x64.zip`。
+- macOS Apple Silicon：`MyCodex-0.9.6-mac-arm64.dmg` 和 `MyCodex-0.9.6-mac-arm64.zip`。
+- macOS Intel：`MyCodex-0.9.6-mac-x64.dmg` 和 `MyCodex-0.9.6-mac-x64.zip`。
+- Windows x64：`MyCodex-0.9.0-win-x64.zip` 仍可从 v0.9.0 历史版本下载。
 
 请到 [GitHub Releases](https://github.com/guo2001china/mycodex/releases) 下载。
 
@@ -288,14 +288,14 @@ MyCodex 还在快速迭代。公开 issue 会用来收集路线图投票、安�
 
 macOS：
 
-1. Apple Silicon 机器下载 `MyCodex-0.9.0-mac-arm64.dmg`，Intel 机器下载 `MyCodex-0.9.0-mac-x64.dmg`。
+1. Apple Silicon 机器下载 `MyCodex-0.9.6-mac-arm64.dmg`，Intel 机器下载 `MyCodex-0.9.6-mac-x64.dmg`。
 2. 打开 dmg。
 3. 拖拽安装 `MyCodex.app`。
 4. 启动后登录、接入模型、开始发任务。
 
 Windows：
 
-1. 到 Releases 下载 `MyCodex-0.9.0-win-x64.zip`。
+1. Windows 0.9.6 包刷新前，可到 Releases 下载历史包 `MyCodex-0.9.0-win-x64.zip`。
 2. 解压整个文件夹。
 3. 运行解压目录里的 `MyCodex.exe`。
 
