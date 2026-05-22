@@ -271,6 +271,8 @@ MyCodex 现在可以通过桌面端管理的浏览器扩展，把 Agent 接到�
 - macOS Intel：`MyCodex-0.9.6-mac-x64.dmg` 和 `MyCodex-0.9.6-mac-x64.zip`。
 - Windows x64：`MyCodex-0.9.0-win-x64.zip` 仍可从 v0.9.0 历史版本下载。
 
+发布说明：[v0.9.6](docs/releases/v0.9.6.md)。
+
 请到 [GitHub Releases](https://github.com/guo2001china/mycodex/releases) 下载。
 
 ## Roadmap 和反馈

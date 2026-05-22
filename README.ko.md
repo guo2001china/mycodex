@@ -131,6 +131,8 @@ Grok, Nous, ChatGPT / Codex, Gemini, MiniMax, Qwen, GitHub Copilot, Claude Max �
 - macOS Intel: `MyCodex-0.9.6-mac-x64.dmg` 또는 `MyCodex-0.9.6-mac-x64.zip`
 - Windows x64: `MyCodex-0.9.0-win-x64.zip`은 v0.9.0 아카이브에서 계속 받을 수 있습니다
 
+릴리스 노트: [v0.9.6](docs/releases/v0.9.6.md)
+
 [GitHub Releases](https://github.com/guo2001china/mycodex/releases)에서 받을 수 있습니다.
 
 ## 커뮤니티

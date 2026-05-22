@@ -271,6 +271,8 @@ Current release:
 - macOS Intel: `MyCodex-0.9.6-mac-x64.dmg` or `MyCodex-0.9.6-mac-x64.zip`.
 - Windows x64: `MyCodex-0.9.0-win-x64.zip` remains available from the v0.9.0 release archive.
 
+Release notes: [v0.9.6](docs/releases/v0.9.6.md).
+
 Download from [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
 
 ## Roadmap and Feedback

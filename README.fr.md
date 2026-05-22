@@ -123,6 +123,8 @@ Le code source n'est pas encore publié. Le dépôt fournit d'abord des installa
 - macOS Intel : `MyCodex-0.9.6-mac-x64.dmg` ou `MyCodex-0.9.6-mac-x64.zip`
 - Windows x64 : `MyCodex-0.9.0-win-x64.zip` reste disponible dans les archives v0.9.0
 
+Notes de version : [v0.9.6](docs/releases/v0.9.6.md)
+
 Téléchargement via [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
 
 ## Communauté
