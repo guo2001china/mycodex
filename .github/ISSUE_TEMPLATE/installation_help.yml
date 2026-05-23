@@ -18,7 +18,7 @@ body:
     id: asset
     attributes:
       label: Installer file
-      placeholder: "MyCodex-0.9.6-mac-arm64.dmg"
+      placeholder: "MyCodex-0.9.7-mac-arm64.dmg"
     validations:
       required: true
   - type: textarea

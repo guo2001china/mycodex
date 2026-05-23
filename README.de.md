@@ -6,12 +6,13 @@ Codex + Hermes für alle: weniger Token-Stress, weniger fragile Setups, ein stab
 
 MyCodex verpackt Codex + Hermes als Desktop-Arbeitsplatz. Du öffnest die App, beschreibst das gewünschte Ergebnis, und der Agent führt die Aufgabe aus, zeigt den Ablauf und speichert Ergebnisdateien. Über WeChat lassen sich Aufgaben auch vom Smartphone aus senden und Dateien zurückerhalten.
 
-## v0.9.6
+## v0.9.7
 
-- Das Desktop-Hauptfenster wird stabiler verwaltet: Login-Callbacks, Update-Status und Fokusaktionen werden nicht mehr an bereits geschlossene Fenster gesendet.
-- Externe Links, Login-Callbacks und ein zweiter App-Start stellen ein vorhandenes lebendes Fenster wieder her und fokussieren es.
-- Minimierte Fenster werden vor dem Fokus wiederhergestellt, damit die App nicht unsichtbar weiterläuft.
-- macOS Apple Silicon und macOS Intel wurden als 0.9.6 neu gebaut.
+- Lokale Modelle haben jetzt Runtime-Parameter, damit `llama-server` Startoptionen direkt in der App angepasst werden können.
+- Screenshots, Bilder, PDFs, Office-Dokumente und andere Agent-Ergebnisse werden als Anhänge gespeichert, statt base64-Text in den Chat zu schreiben.
+- Artifact-Karten im Ausführungsprozess öffnen die rechte Vorschau, damit Dateien direkt in der Unterhaltung geprüft werden können.
+- Statusmeldungen für Subscription-Accounts und lokale Modelle sind klarer, auch wenn Modellordner oder Einstellungen nicht geladen werden können.
+- macOS Apple Silicon und macOS Intel wurden als 0.9.7 neu gebaut, inklusive Metadata für den Desktop-Updater.
 - Windows x64 bleibt bis zum nächsten Windows-Runtime-Build als 0.9.0-Archivpaket verfügbar.
 - WeChat und Hermes bleiben der Kern-Workflow: Aufgaben senden, Gespräche fortsetzen, Ergebnisdateien empfangen.
 - Ergebnisse bleiben als Arbeitsnachweis erhalten: Ablauf, Fazit, Tabellen, Dateien und nächste Schritte in derselben Unterhaltung.
@@ -119,11 +120,11 @@ Wer eigene API Keys nutzt, kann Provider, Modell, API Key, Base URL und Standard
 
 Der Quellcode ist noch nicht veröffentlicht. Aktuell gibt es zuerst gepackte Installer.
 
-- macOS Apple Silicon: `MyCodex-0.9.6-mac-arm64.dmg` oder `MyCodex-0.9.6-mac-arm64.zip`
-- macOS Intel: `MyCodex-0.9.6-mac-x64.dmg` oder `MyCodex-0.9.6-mac-x64.zip`
+- macOS Apple Silicon: `MyCodex-0.9.7-mac-arm64.dmg` oder `MyCodex-0.9.7-mac-arm64.zip`
+- macOS Intel: `MyCodex-0.9.7-mac-x64.dmg` oder `MyCodex-0.9.7-mac-x64.zip`
 - Windows x64: `MyCodex-0.9.0-win-x64.zip` bleibt im v0.9.0-Archiv verfügbar
 
-Release Notes: [v0.9.6](docs/releases/v0.9.6.md)
+Release Notes: [v0.9.7](docs/releases/v0.9.7.md)
 
 Download über [GitHub Releases](https://github.com/guo2001china/mycodex/releases).
 

@@ -13,7 +13,7 @@ MyCodex is currently distributed as packaged desktop installers. Full applicatio
 ## Before Opening an Issue
 
 1. Check the latest release: https://github.com/guo2001china/mycodex/releases/latest
-2. Read the current release notes: docs/releases/v0.9.6.md
+2. Read the current release notes: docs/releases/v0.9.7.md
 3. Search existing issues for your platform, provider, or workflow.
 4. Remove tokens, API keys, cookies, private files, and private logs before posting.
 

@@ -20,7 +20,7 @@ MyCodex 把 Codex + Hermes 变成一个普通人能直接用的桌面 AI 工作�
 <p align="center">
   <a href="https://github.com/guo2001china/mycodex/releases/latest">下载</a>
   ·
-  <a href="docs/releases/v0.9.6.md">v0.9.6 发布说明</a>
+  <a href="docs/releases/v0.9.7.md">v0.9.7 发布说明</a>
   ·
   <a href="#能做什么">能做什么</a>
   ·
@@ -33,9 +33,9 @@ MyCodex 把 Codex + Hermes 变成一个普通人能直接用的桌面 AI 工作�
 
 | 平台 | 推荐文件 | 说明 |
 | --- | --- | --- |
-| macOS Apple Silicon | [`MyCodex-0.9.6-mac-arm64.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.6/MyCodex-0.9.6-mac-arm64.dmg) | M 系列 Mac |
-| macOS Intel | [`MyCodex-0.9.6-mac-x64.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.6/MyCodex-0.9.6-mac-x64.dmg) | Intel Mac |
-| Windows x64 | [`MyCodex-0.9.0-win-x64.zip`](https://github.com/guo2001china/mycodex/releases/tag/v0.9.0) | 历史包；Windows 0.9.6 等待 runtime 构建刷新 |
+| macOS Apple Silicon | [`MyCodex-0.9.7-mac-arm64.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.7/MyCodex-0.9.7-mac-arm64.dmg) | M 系列 Mac |
+| macOS Intel | [`MyCodex-0.9.7-mac-x64.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.7/MyCodex-0.9.7-mac-x64.dmg) | Intel Mac |
+| Windows x64 | [`MyCodex-0.9.0-win-x64.zip`](https://github.com/guo2001china/mycodex/releases/tag/v0.9.0) | 历史包；Windows 0.9.7 等待 runtime 构建刷新 |
 
 手动安装优先下载 DMG。Release 里的 ZIP 主要给桌面自动更新使用。
 
@@ -66,18 +66,19 @@ MyCodex 把一件工作放回同一个地方：
 | 浏览器任务 | 通过桌面管理的浏览器桥接处理需要真实页面交互的流程 |
 | 微信接力 | 离开电脑后继续发任务、收文件 |
 
-## v0.9.6
+## v0.9.7
 
-这一版重点让桌面端更稳：关闭窗口、重新打开、最小化、登录回调、外部链接唤起时，MyCodex 更容易回到用户能看到的窗口。
+这一版重点把 Agent 产物变成用户能直接检查和复用的文件，同时让本地模型用户能在应用里调整运行参数。
 
 用户能感知到的变化：
 
-- 不再把登录、更新、聚焦事件发给已经关闭的窗口。
-- 外部链接和第二次打开应用时，会优先恢复可用窗口。
-- 最小化窗口会先恢复再聚焦，减少“应用开着但找不到”的情况。
-- macOS Apple Silicon 和 Intel 安装包已刷新。
+- 本地模型设置新增运行参数入口，可以直接调整 `llama-server` 启动参数。
+- Agent 生成的截图、图片、PDF、Office 文档等产物会进入附件和预览，不再把 base64 长串塞进聊天正文。
+- 执行过程里的产物卡片可以复用右侧预览面板，用户不用离开对话就能检查文件。
+- 订阅账号和本地模型状态展示更清楚，加载失败时会在设置页暴露原因。
+- macOS Apple Silicon 和 Intel 安装包已刷新，桌面端自动更新元数据已发布。
 
-完整发布说明：[docs/releases/v0.9.6.md](docs/releases/v0.9.6.md)。
+完整发布说明：[docs/releases/v0.9.7.md](docs/releases/v0.9.7.md)。
 
 ## 产品截图
 

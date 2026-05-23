@@ -6,12 +6,13 @@
 
 MyCodex は Codex + Hermes を、普通のユーザーがそのまま使える作業台としてまとめたものです。アプリを開き、やりたいことを伝えると、Agent が処理を進め、途中経過を見せ、結果ファイルを残します。WeChat を接続すれば、PC の前にいない時でもタスクを投げたり、結果ファイルを受け取ったりできます。
 
-## v0.9.6 のポイント
+## v0.9.7 のポイント
 
-- デスクトップのメインウィンドウ管理を安定化しました。閉じたウィンドウへログインコールバック、更新状態、フォーカス処理を送らないようにしています。
-- 外部リンク、ログインコールバック、2 回目の起動では、生きているウィンドウを優先して復元・フォーカスします。
-- 最小化されたウィンドウはフォーカス前に復元されるため、アプリが起動しているのに見えない状態を減らします。
-- macOS Apple Silicon と macOS Intel の 0.9.6 パッケージを更新しました。
+- ローカルモデル設定に runtime parameters が追加され、`llama-server` の起動オプションをアプリ内で調整できます。
+- Agent が生成したスクリーンショット、画像、PDF、Office 文書などは、base64 の長い本文ではなく添付ファイルとして扱われます。
+- 実行過程の artifact card から右側プレビューパネルを開き、会話の中で生成物を確認できます。
+- サブスクリプションアカウントとローカルモデルの状態表示が改善され、読み込み失敗時の理由が分かりやすくなりました。
+- macOS Apple Silicon と macOS Intel の 0.9.7 パッケージを更新し、デスクトップ自動更新用 metadata も公開しました。
 - Windows x64 は Windows runtime ビルド更新まで 0.9.0 のアーカイブ版を提供します。
 - WeChat と Hermes のワークフローは引き続き中心です。タスク送信、会話継続、結果ファイル受信に使えます。
 - 結果は単なる返答ではなく、過程、結論、表、ファイル、次のアクションまで同じ会話に残ります。
@@ -126,11 +127,11 @@ Grok、Nous、ChatGPT / Codex、Gemini、MiniMax、Qwen、GitHub Copilot、Claud
 
 ソースコードはまだ公開していません。まずはパッケージ済みインストーラを配布しています。
 
-- macOS Apple Silicon: `MyCodex-0.9.6-mac-arm64.dmg` または `MyCodex-0.9.6-mac-arm64.zip`
-- macOS Intel: `MyCodex-0.9.6-mac-x64.dmg` または `MyCodex-0.9.6-mac-x64.zip`
+- macOS Apple Silicon: `MyCodex-0.9.7-mac-arm64.dmg` または `MyCodex-0.9.7-mac-arm64.zip`
+- macOS Intel: `MyCodex-0.9.7-mac-x64.dmg` または `MyCodex-0.9.7-mac-x64.zip`
 - Windows x64: `MyCodex-0.9.0-win-x64.zip` は v0.9.0 アーカイブから引き続き利用できます
 
-リリースノート: [v0.9.6](docs/releases/v0.9.6.md)
+リリースノート: [v0.9.7](docs/releases/v0.9.7.md)
 
 [GitHub Releases](https://github.com/guo2001china/mycodex/releases) からダウンロードできます。
 

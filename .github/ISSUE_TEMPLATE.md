@@ -11,4 +11,4 @@ Please use the structured issue forms when possible:
 
 Do not post API keys, tokens, cookies, account credentials, private files, or private logs.
 
-Latest release notes: https://github.com/guo2001china/mycodex/blob/main/docs/releases/v0.9.6.md
+Latest release notes: https://github.com/guo2001china/mycodex/blob/main/docs/releases/v0.9.7.md

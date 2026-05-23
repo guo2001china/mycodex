@@ -20,7 +20,7 @@ No command-line setup first. No token routing first. Open the app, log in, descr
 <p align="center">
   <a href="https://github.com/guo2001china/mycodex/releases/latest">Download</a>
   ·
-  <a href="docs/releases/v0.9.6.md">v0.9.6 release notes</a>
+  <a href="docs/releases/v0.9.7.md">v0.9.7 release notes</a>
   ·
   <a href="#what-you-can-do">What you can do</a>
   ·
@@ -33,9 +33,9 @@ No command-line setup first. No token routing first. Open the app, log in, descr
 
 | Platform | Recommended file | Notes |
 | --- | --- | --- |
-| macOS Apple Silicon | [`MyCodex-0.9.6-mac-arm64.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.6/MyCodex-0.9.6-mac-arm64.dmg) | M-series Mac |
-| macOS Intel | [`MyCodex-0.9.6-mac-x64.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.6/MyCodex-0.9.6-mac-x64.dmg) | Intel Mac |
-| Windows x64 | [`MyCodex-0.9.0-win-x64.zip`](https://github.com/guo2001china/mycodex/releases/tag/v0.9.0) | Older archive package; Windows 0.9.6 is pending |
+| macOS Apple Silicon | [`MyCodex-0.9.7-mac-arm64.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.7/MyCodex-0.9.7-mac-arm64.dmg) | M-series Mac |
+| macOS Intel | [`MyCodex-0.9.7-mac-x64.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.7/MyCodex-0.9.7-mac-x64.dmg) | Intel Mac |
+| Windows x64 | [`MyCodex-0.9.0-win-x64.zip`](https://github.com/guo2001china/mycodex/releases/tag/v0.9.0) | Older archive package; Windows 0.9.7 is pending |
 
 For manual installation, use the DMG. ZIP files in the release are mainly for the desktop updater.
 
@@ -66,18 +66,19 @@ The value is simple: less setup, less switching, less lost context.
 | Browser tasks | Use a desktop-managed browser bridge for workflows that need real page interaction |
 | Mobile handoff | Send tasks and receive result files through WeChat |
 
-## v0.9.6
+## v0.9.7
 
-This release makes the desktop app feel more reliable when windows are closed, reopened, minimized, or triggered from login callbacks and external links.
+This release makes MyCodex better at turning AI work into usable files, and gives local-model users a clearer way to control runtime behavior.
 
 User-visible improvements:
 
-- MyCodex no longer sends login, update, or focus events to a closed desktop window.
-- External links and second launches restore a live window when one exists.
-- Minimized windows are restored before focus, so the app is easier to find.
-- macOS Apple Silicon and Intel installers are refreshed.
+- Local model settings now include runtime parameters, so users can tune `llama-server` launch options from the app.
+- Screenshots, images, PDFs, Office documents, and other generated files are saved as attachments instead of filling the chat with base64 text.
+- Artifact cards in the execution process open in the right-side preview panel, so users can inspect results without leaving the conversation.
+- Subscription-account and local-model status messages are clearer when model directories or settings fail to load.
+- macOS Apple Silicon and Intel installers are refreshed, and update metadata has been published for the desktop updater.
 
-Read the full notes: [docs/releases/v0.9.6.md](docs/releases/v0.9.6.md).
+Read the full notes: [docs/releases/v0.9.7.md](docs/releases/v0.9.7.md).
 
 ## Screenshots
 

@@ -18,7 +18,7 @@ For macOS, prefer the DMG asset for manual installation. ZIP assets are attached
 
 Current macOS release notes:
 
-https://github.com/guo2001china/mycodex/blob/main/docs/releases/v0.9.6.md
+https://github.com/guo2001china/mycodex/blob/main/docs/releases/v0.9.7.md
 
 ## Current Status
 

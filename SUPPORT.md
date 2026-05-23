@@ -10,7 +10,7 @@ For installation or usage help, use GitHub Issues. Good reports are specific: pl
 
 Current macOS release notes:
 
-- v0.9.6: https://github.com/guo2001china/mycodex/blob/main/docs/releases/v0.9.6.md
+- v0.9.7: https://github.com/guo2001china/mycodex/blob/main/docs/releases/v0.9.7.md
 
 For community updates, add the community contact from the README and write `MyCodex` in the note.
 

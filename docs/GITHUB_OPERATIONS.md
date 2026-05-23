@@ -30,7 +30,7 @@ GitHub is the public storefront for MyCodex. Treat every page as part of the pro
 
 ## Traffic Levers
 
-- Use release titles that include product and version: `MyCodex v0.9.6`.
+- Use release titles that include product and version: `MyCodex v0.9.7`.
 - Keep the latest macOS download links visible above the long tour.
 - Convert visitors who are not ready to download: star, watch releases, vote roadmap, request provider.
 - Keep multilingual READMEs in sync for search and trust.
