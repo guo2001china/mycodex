@@ -9,9 +9,9 @@
   <a href="https://github.com/guo2001china/mycodex/discussions"><img alt="Discussions" src="https://img.shields.io/badge/discussions-open-2ea44f"></a>
 </p>
 
-MyCodex 把 Codex + Hermes 变成一个普通人能直接用的桌面 AI 工作台：调研、销售线索、竞品监控、运营报告、文件产出、后续跟进，都放在一个项目里。
+MyCodex 把 Codex + Hermes 变成普通人能直接上手的桌面 AI 工作台：调研、销售线索、竞品监控、运营报告、文件产出、后续跟进，都能在一个项目里搞定。
 
-不用先研究命令行、Token、模型路由和环境变量。打开应用，登录，说清楚要做什么，MyCodex 会保留任务、过程、结果和文件。
+不用先啃命令行、Token、模型路由和环境变量。打开应用、登录账号、说清需求，MyCodex 就会帮你完整保留任务、执行过程、最终结果和生成文件。
 
 <p align="center">
   <img src="assets/screenshots/mycodex-home.jpg" alt="MyCodex 桌面工作台" width="900">
@@ -31,13 +31,13 @@ MyCodex 把 Codex + Hermes 变成一个普通人能直接用的桌面 AI 工作�
 
 ## 下载
 
-| 平台 | 推荐文件 | 说明 |
+| 平台 | 推荐文件 | 适用 |
 | --- | --- | --- |
-| macOS Apple Silicon | [`MyCodex-0.9.7-mac-arm64.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.7/MyCodex-0.9.7-mac-arm64.dmg) | M 系列 Mac |
-| macOS Intel | [`MyCodex-0.9.7-mac-x64.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.7/MyCodex-0.9.7-mac-x64.dmg) | Intel Mac |
-| Windows x64 | [`MyCodex-0.9.0-win-x64.zip`](https://github.com/guo2001china/mycodex/releases/tag/v0.9.0) | 历史包；Windows 0.9.7 等待 runtime 构建刷新 |
+| macOS Apple Silicon | [`MyCodex-0.9.7-mac-arm64.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.7/MyCodex-0.9.7-mac-arm64.dmg) | M1/M2/M3 系列芯片的 Mac 设备 |
+| macOS Intel | [`MyCodex-0.9.7-mac-x64.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.7/MyCodex-0.9.7-mac-x64.dmg) | 搭载 Intel 处理器的 Mac 设备 |
+| Windows x64 | [`MyCodex-0.9.0-win-x64.zip`](https://github.com/guo2001china/mycodex/releases/tag/v0.9.0) |  历史稳定版本；v0.9.7 Windows 安装包正在适配 runtime，敬请期待|
 
-手动安装优先下载 DMG。Release 里的 ZIP 主要给桌面自动更新使用。
+安装提示：手动安装优先下载 .dmg 格式文件；Release 中的 .zip 包主要用于桌面端自动更新，不建议直接用于首次安装。
 
 ## 价值
 
