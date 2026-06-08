@@ -20,6 +20,8 @@ DeepSeek企业桌面版 v0.9.68 把 **Token共享**、**AI 技能接单** 和 **
 <p align="center">
   <a href="https://github.com/guo2001china/mycodex/releases/download/v0.9.68/DeepSeekDesktop-0.9.68-mac.dmg">下载 macOS DMG</a>
   ·
+  <a href="https://github.com/guo2001china/mycodex/releases/download/v0.9.68/DeepSeekDesktop-0.9.68-win-x64.zip">下载 Windows ZIP</a>
+  ·
   <a href="docs/releases/v0.9.68.md">v0.9.68 发布说明</a>
   ·
   <a href="#ai-技能接单">AI 技能接单</a>
@@ -33,7 +35,7 @@ DeepSeek企业桌面版 v0.9.68 把 **Token共享**、**AI 技能接单** 和 **
 | --- | --- | --- |
 | macOS universal | [`DeepSeekDesktop-0.9.68-mac.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.68/DeepSeekDesktop-0.9.68-mac.dmg) | 当前 v0.9.68 安装包，适合 Apple Silicon 和 Intel Mac |
 | macOS updater | [`DeepSeekDesktop-0.9.68-mac.zip`](https://github.com/guo2001china/mycodex/releases/download/v0.9.68/DeepSeekDesktop-0.9.68-mac.zip) | 主要给自动更新使用 |
-| Windows x64 | [`MyCodex-0.9.0-win-x64.zip`](https://github.com/guo2001china/mycodex/releases/tag/v0.9.0) | 历史归档包；Windows v0.9.68 等待 runtime 验证 |
+| Windows x64 | [`DeepSeekDesktop-0.9.68-win-x64.zip`](https://github.com/guo2001china/mycodex/releases/download/v0.9.68/DeepSeekDesktop-0.9.68-win-x64.zip) | 当前 v0.9.68 Windows 包 |
 
 手动安装优先下载 DMG。发布资产技术名保留 `DeepSeekDesktop`，用户可见品牌使用 `DeepSeek企业桌面版`。
 
@@ -65,8 +67,8 @@ Release title：**DeepSeek企业桌面版 v0.9.68**。
 这一版把 GitHub 门面、官网、下载资产和 SEO 文案统一到新版企业桌面定位。
 
 - 公开品牌升级为 DeepSeek企业桌面版。
-- 当前 macOS 资产使用 `DeepSeekDesktop-0.9.68-mac.dmg` 和 `DeepSeekDesktop-0.9.68-mac.zip`。
-- Windows 明确标注为旧归档包，等待 v0.9.68 Windows runtime 验证。
+- 当前资产使用 `DeepSeekDesktop-0.9.68-mac.dmg`、`DeepSeekDesktop-0.9.68-mac.zip` 和 `DeepSeekDesktop-0.9.68-win-x64.zip`。
+- Windows x64 已作为当前 v0.9.68 包提供下载。
 - README、Release notes、Issue 模板和运营文档改为收集 Token共享与技能接单反馈。
 - 官网和 SEO 契约保护新版定位，不再保护旧发布叙事。
 

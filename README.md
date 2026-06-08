@@ -20,6 +20,8 @@ Teams should not pass personal API keys around in plain text. The goal is to con
 <p align="center">
   <a href="https://github.com/guo2001china/mycodex/releases/download/v0.9.68/DeepSeekDesktop-0.9.68-mac.dmg">Download macOS DMG</a>
   ·
+  <a href="https://github.com/guo2001china/mycodex/releases/download/v0.9.68/DeepSeekDesktop-0.9.68-win-x64.zip">Download Windows ZIP</a>
+  ·
   <a href="docs/releases/v0.9.68.md">v0.9.68 release notes</a>
   ·
   <a href="#ai-skill-orders">AI skill orders</a>
@@ -33,7 +35,7 @@ Teams should not pass personal API keys around in plain text. The goal is to con
 | --- | --- | --- |
 | macOS universal | [`DeepSeekDesktop-0.9.68-mac.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.68/DeepSeekDesktop-0.9.68-mac.dmg) | Current v0.9.68 installer for Apple Silicon and Intel Mac |
 | macOS updater | [`DeepSeekDesktop-0.9.68-mac.zip`](https://github.com/guo2001china/mycodex/releases/download/v0.9.68/DeepSeekDesktop-0.9.68-mac.zip) | Mainly for auto-update |
-| Windows x64 | [`MyCodex-0.9.0-win-x64.zip`](https://github.com/guo2001china/mycodex/releases/tag/v0.9.0) | Older archive package; Windows v0.9.68 is pending runtime verification |
+| Windows x64 | [`DeepSeekDesktop-0.9.68-win-x64.zip`](https://github.com/guo2001china/mycodex/releases/download/v0.9.68/DeepSeekDesktop-0.9.68-win-x64.zip) | Current v0.9.68 Windows package |
 
 For manual installation, use the DMG. The packaged app name remains `DeepSeekDesktop` for release assets; the public product brand is `DeepSeek企业桌面版`.
 
@@ -65,8 +67,8 @@ Release title: **DeepSeek企业桌面版 v0.9.68**.
 This release aligns the public GitHub storefront, official site, download assets, and SEO copy around the new enterprise desktop positioning.
 
 - Public brand upgraded to DeepSeek企业桌面版.
-- Current macOS assets use `DeepSeekDesktop-0.9.68-mac.dmg` and `DeepSeekDesktop-0.9.68-mac.zip`.
-- Windows is explicitly marked as an older archive package until the v0.9.68 Windows runtime is verified.
+- Current assets use `DeepSeekDesktop-0.9.68-mac.dmg`, `DeepSeekDesktop-0.9.68-mac.zip`, and `DeepSeekDesktop-0.9.68-win-x64.zip`.
+- Windows x64 is now available as the current v0.9.68 package.
 - README, release notes, issue templates, and operations docs now collect Token sharing and AI skill-order feedback.
 - Site copy and SEO contracts protect the new positioning instead of the old launch narrative.
 

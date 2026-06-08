@@ -12,7 +12,7 @@ Token공유는 제어된 모델 호출 권한과 한도를 공유하는 것입�
 | --- | --- | --- |
 | macOS universal | [`DeepSeekDesktop-0.9.68-mac.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.68/DeepSeekDesktop-0.9.68-mac.dmg) | Current v0.9.68 installer |
 | macOS updater | [`DeepSeekDesktop-0.9.68-mac.zip`](https://github.com/guo2001china/mycodex/releases/download/v0.9.68/DeepSeekDesktop-0.9.68-mac.zip) | Mainly for auto-update |
-| Windows x64 | [`MyCodex-0.9.0-win-x64.zip`](https://github.com/guo2001china/mycodex/releases/tag/v0.9.0) | Older archive package |
+| Windows x64 | [`DeepSeekDesktop-0.9.68-win-x64.zip`](https://github.com/guo2001china/mycodex/releases/download/v0.9.68/DeepSeekDesktop-0.9.68-win-x64.zip) | Current v0.9.68 Windows package |
 
 ## AI Skill Orders
 

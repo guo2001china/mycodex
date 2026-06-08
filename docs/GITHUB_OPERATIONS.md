@@ -26,7 +26,7 @@ GitHub is the public storefront for DeepSeek企业桌面版. Treat every page as
 ## Operating Cadence
 
 - Every release: update Release body, `docs/releases`, README download table, issue template version placeholders, and repo About if positioning changed.
-- Every site refresh: make sure GitHub README and 35m.ai use the same brand, current version, downloads, and Windows status.
+- Every site refresh: make sure GitHub README and 35m.ai use the same brand, current version, macOS downloads, and Windows download.
 - Every week: triage open issues, label roadmap signals, reply to install blockers, and close stale duplicate reports.
 - Every month: refresh screenshots if the first-run path changed, promote the top 3 roadmap issues, and review topics for search fit.
 
@@ -42,7 +42,7 @@ GitHub is the public storefront for DeepSeek企业桌面版. Treat every page as
 
 - No dead links.
 - No stale macOS version numbers.
-- Windows package status must be explicit when it lags behind macOS.
+- Windows package status must be explicit; v0.9.68 uses `DeepSeekDesktop-0.9.68-win-x64.zip`.
 - Current public copy must use DeepSeek企业桌面版, Token sharing, AI skill orders, and enterprise desktop workbench language.
 - Screenshots must show real product surfaces, not generic marketing art.
 - Release notes must include downloads, user-visible changes, auto-update status, verification, and known limits.
