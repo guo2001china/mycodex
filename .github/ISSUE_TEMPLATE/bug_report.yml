@@ -1,5 +1,5 @@
 name: Bug report
-description: Something in MyCodex is not working as expected.
+description: Something in DeepSeek企业桌面版 is not working as expected.
 title: "[Bug]: "
 labels: ["bug", "needs-feedback"]
 body:
@@ -34,7 +34,7 @@ body:
     attributes:
       label: Steps to reproduce
       placeholder: |
-        1. Open MyCodex
+        1. Open DeepSeek企业桌面版
         2. Go to ...
         3. Click ...
         4. See ...
@@ -43,8 +43,8 @@ body:
   - type: input
     id: version
     attributes:
-      label: MyCodex version
-      placeholder: "v0.9.7"
+      label: DeepSeek企业桌面版 version
+      placeholder: "v0.9.68"
   - type: dropdown
     id: platform
     attributes:

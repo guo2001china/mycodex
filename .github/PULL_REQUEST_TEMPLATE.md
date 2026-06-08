@@ -7,6 +7,8 @@
 - [ ] Documentation
 - [ ] Translation
 - [ ] Release metadata
+- [ ] DeepSeek企业桌面版 public copy
+- [ ] Token sharing / AI skill-order wording
 - [ ] Other
 
 ## Checks

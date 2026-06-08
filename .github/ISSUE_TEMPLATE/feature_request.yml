@@ -6,15 +6,15 @@ body:
   - type: textarea
     id: problem
     attributes:
-      label: What problem should MyCodex solve?
+      label: What problem should DeepSeek企业桌面版 solve?
       description: Describe the user scenario, not only the feature name.
     validations:
       required: true
   - type: textarea
     id: workflow
     attributes:
-      label: What should the workflow look like?
-      placeholder: "I want to open MyCodex, send ..., and receive ..."
+      label: What should the skill-order workflow look like?
+      placeholder: "I want to open DeepSeek企业桌面版, provide ..., and receive ..."
     validations:
       required: true
   - type: dropdown
@@ -22,12 +22,11 @@ body:
     attributes:
       label: Area
       options:
-        - Codex / Agent workflow
-        - Hermes integration
-        - WeChat mobile entry
+        - Token sharing
+        - AI skill order
+        - Desktop Agent workflow
         - Computer automation
         - Browser automation
-        - Privacy browser
         - Model provider
         - File preview
         - Installer

@@ -1,13 +1,13 @@
-name: Model provider request
-description: Request or report a model provider, subscription account, or API Key integration.
+name: Model provider or Token sharing request
+description: Request or report a model provider, subscription account, API Key integration, or team Token sharing setup.
 title: "[Provider]: "
 labels: ["model-provider", "needs-feedback"]
 body:
   - type: input
     id: provider
     attributes:
-      label: Provider name
-      placeholder: "Grok, ChatGPT / Codex, Gemini, Qwen, Claude Max, ..."
+      label: Provider or shared capacity name
+      placeholder: "DeepSeek, Gemini, Qwen, Claude, internal gateway, team quota pool..."
     validations:
       required: true
   - type: dropdown
@@ -15,8 +15,10 @@ body:
     attributes:
       label: Preferred connection
       options:
+        - Team Token sharing
+        - Controlled API gateway
         - Subscription account
-        - API Key
+        - API Key managed by admin
         - OAuth
         - Not sure
     validations:
@@ -24,11 +26,11 @@ body:
   - type: textarea
     id: use-case
     attributes:
-      label: What do you want to use it for?
+      label: What skill orders should this model capacity support?
     validations:
       required: true
   - type: textarea
     id: notes
     attributes:
       label: Notes
-      description: Do not paste keys, tokens, cookies, or account secrets.
+      description: Do not paste keys, tokens, cookies, or account secrets. Token sharing should describe controlled access, not plaintext keys.

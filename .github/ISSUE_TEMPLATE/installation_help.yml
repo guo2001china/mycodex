@@ -1,5 +1,5 @@
 name: Installation help
-description: Get help with downloading, installing, or launching MyCodex.
+description: Get help with downloading, installing, or launching DeepSeek企业桌面版.
 title: "[Install]: "
 labels: ["support", "installer", "needs-feedback"]
 body:
@@ -18,7 +18,7 @@ body:
     id: asset
     attributes:
       label: Installer file
-      placeholder: "MyCodex-0.9.7-mac-arm64.dmg"
+      placeholder: "DeepSeekDesktop-0.9.68-mac.dmg"
     validations:
       required: true
   - type: textarea

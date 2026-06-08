@@ -1,14 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Download MyCodex
+  - name: Download DeepSeek企业桌面版
     url: https://github.com/guo2001china/mycodex/releases
     about: Get the latest packaged installers.
-  - name: Read v0.9.7 release notes
-    url: https://github.com/guo2001china/mycodex/blob/main/docs/releases/v0.9.7.md
+  - name: Read v0.9.68 release notes
+    url: https://github.com/guo2001china/mycodex/blob/main/docs/releases/v0.9.68.md
     about: See what changed, which installers are current, and what is still pending.
   - name: Roadmap issues
     url: https://github.com/guo2001china/mycodex/issues?q=is%3Aissue+is%3Aopen+label%3Aroadmap
-    about: Vote on workflows, model providers, browser automation, and desktop priorities.
-  - name: Community QR code
-    url: https://github.com/guo2001china/mycodex#community
-    about: Add the community contact and write "MyCodex" in the note.
+    about: Vote on Token sharing, skill orders, model providers, browser automation, and desktop priorities.

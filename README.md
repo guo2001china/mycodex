@@ -1,4 +1,4 @@
-# MyCodex
+# DeepSeek企业桌面版
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md)
 
@@ -9,22 +9,20 @@
   <a href="https://github.com/guo2001china/mycodex/discussions"><img alt="Discussions" src="https://img.shields.io/badge/discussions-open-2ea44f"></a>
 </p>
 
-MyCodex turns Codex + Hermes into a desktop AI workspace for real work: research, sales leads, competitor monitoring, reports, files, and follow-up tasks.
+DeepSeek企业桌面版 v0.9.68 is an enterprise desktop Agent workbench for **Token sharing**, **AI skill orders**, and repeatable delivery workflows.
 
-No command-line setup first. No token routing first. Open the app, log in, describe the work, and keep the result, process, and files in one project workspace.
+Teams should not pass personal API keys around in plain text. The goal is to connect controlled model invocation, quota, and permission boundaries to the desktop app, then turn research, sales leads, reports, files, browser tasks, support tickets, and recruiting screening into reusable skills.
 
 <p align="center">
-  <img src="assets/screenshots/mycodex-home.jpg" alt="MyCodex desktop workspace" width="900">
+  <img src="assets/screenshots/mycodex-home.jpg" alt="DeepSeek企业桌面版 desktop Agent workbench" width="900">
 </p>
 
 <p align="center">
-  <a href="https://github.com/guo2001china/mycodex/releases/latest">Download</a>
+  <a href="https://github.com/guo2001china/mycodex/releases/download/v0.9.68/DeepSeekDesktop-0.9.68-mac.dmg">Download macOS DMG</a>
   ·
-  <a href="docs/releases/v0.9.7.md">v0.9.7 release notes</a>
+  <a href="docs/releases/v0.9.68.md">v0.9.68 release notes</a>
   ·
-  <a href="#what-you-can-do">What you can do</a>
-  ·
-  <a href="#screenshots">Screenshots</a>
+  <a href="#ai-skill-orders">AI skill orders</a>
   ·
   <a href="#feedback">Feedback</a>
 </p>
@@ -33,112 +31,86 @@ No command-line setup first. No token routing first. Open the app, log in, descr
 
 | Platform | Recommended file | Notes |
 | --- | --- | --- |
-| macOS Apple Silicon | [`MyCodex-0.9.7-mac-arm64.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.7/MyCodex-0.9.7-mac-arm64.dmg) | M-series Mac |
-| macOS Intel | [`MyCodex-0.9.7-mac-x64.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.7/MyCodex-0.9.7-mac-x64.dmg) | Intel Mac |
-| Windows x64 | [`MyCodex-0.9.0-win-x64.zip`](https://github.com/guo2001china/mycodex/releases/tag/v0.9.0) | Older archive package; Windows 0.9.7 is pending |
+| macOS universal | [`DeepSeekDesktop-0.9.68-mac.dmg`](https://github.com/guo2001china/mycodex/releases/download/v0.9.68/DeepSeekDesktop-0.9.68-mac.dmg) | Current v0.9.68 installer for Apple Silicon and Intel Mac |
+| macOS updater | [`DeepSeekDesktop-0.9.68-mac.zip`](https://github.com/guo2001china/mycodex/releases/download/v0.9.68/DeepSeekDesktop-0.9.68-mac.zip) | Mainly for auto-update |
+| Windows x64 | [`MyCodex-0.9.0-win-x64.zip`](https://github.com/guo2001china/mycodex/releases/tag/v0.9.0) | Older archive package; Windows v0.9.68 is pending runtime verification |
 
-For manual installation, use the DMG. ZIP files in the release are mainly for the desktop updater.
+For manual installation, use the DMG. The packaged app name remains `DeepSeekDesktop` for release assets; the public product brand is `DeepSeek企业桌面版`.
 
-## Why It Matters
+## Token Sharing
 
-Most AI agent tools lose users before the first useful task: API keys, shell commands, model settings, scattered files, and no clear place to continue the work.
+Token sharing means sharing controlled model capability, not distributing personal keys in plain text.
 
-MyCodex keeps the whole job together:
+- Centralize model accounts, API keys, local models, or subscription capacity.
+- Let team members run authorized skills without reconfiguring every model.
+- Keep task history, tool actions, output files, and follow-up context in the desktop project.
+- Preserve human approval for login, payment, deletion, sending, publishing, and customer-sensitive actions.
 
-- the instruction you gave
-- the model and project used
-- the execution process
-- generated files and previews
-- follow-up questions
-- WeChat handoff when you leave the computer
+## AI Skill Orders
 
-The value is simple: less setup, less switching, less lost context.
-
-## What You Can Do
-
-| Workflow | What MyCodex helps with |
+| Skill | What DeepSeek企业桌面版 helps deliver |
 | --- | --- |
-| Sales leads | Collect public information, summarize context, and produce follow-up tables |
-| Competitor monitoring | Check pages, capture changes, and turn observations into notes |
-| Operations reports | Pull scattered material into structured weekly or campaign reports |
-| Content research | Gather sources, organize themes, and draft reusable outlines |
-| File work | Generate Markdown, CSV, HTML, JSON, images, PDFs, and inspect them in the app |
-| Browser tasks | Use a desktop-managed browser bridge for workflows that need real page interaction |
-| Mobile handoff | Send tasks and receive result files through WeChat |
+| Sales leads | Collect public company context, contact clues, source notes, and follow-up tables |
+| Operations reports | Turn scattered notes, screenshots, and data into weekly reports and action lists |
+| Competitor monitoring | Track public product, pricing, hiring, and release changes |
+| Support tickets | Classify issues, draft replies, summarize context, and preserve approval steps |
+| Recruiting screening | Compare resumes with role requirements and prepare review notes |
+| Meeting notes | Convert meeting input into decisions, tasks, and follow-up files |
+| Browser tasks | Read pages, gather sources, fill forms with approval, and output structured files |
 
-## v0.9.7
+## v0.9.68
 
-This release makes MyCodex better at turning AI work into usable files, and gives local-model users a clearer way to control runtime behavior.
+Release title: **DeepSeek企业桌面版 v0.9.68**.
 
-User-visible improvements:
+This release aligns the public GitHub storefront, official site, download assets, and SEO copy around the new enterprise desktop positioning.
 
-- Local model settings now include runtime parameters, so users can tune `llama-server` launch options from the app.
-- Screenshots, images, PDFs, Office documents, and other generated files are saved as attachments instead of filling the chat with base64 text.
-- Artifact cards in the execution process open in the right-side preview panel, so users can inspect results without leaving the conversation.
-- Subscription-account and local-model status messages are clearer when model directories or settings fail to load.
-- macOS Apple Silicon and Intel installers are refreshed, and update metadata has been published for the desktop updater.
+- Public brand upgraded to DeepSeek企业桌面版.
+- Current macOS assets use `DeepSeekDesktop-0.9.68-mac.dmg` and `DeepSeekDesktop-0.9.68-mac.zip`.
+- Windows is explicitly marked as an older archive package until the v0.9.68 Windows runtime is verified.
+- README, release notes, issue templates, and operations docs now collect Token sharing and AI skill-order feedback.
+- Site copy and SEO contracts protect the new positioning instead of the old launch narrative.
 
-Read the full notes: [docs/releases/v0.9.7.md](docs/releases/v0.9.7.md).
+Read the full notes: [docs/releases/v0.9.68.md](docs/releases/v0.9.68.md).
 
 ## Screenshots
 
-### Start a task
+### Start a skill order
 
-<img src="assets/screenshots/desktop-conversation-home.jpg" alt="MyCodex conversation home" width="900">
+<img src="assets/screenshots/desktop-conversation-home.jpg" alt="DeepSeek企业桌面版 conversation home" width="900">
 
-Describe the outcome you want, choose a model and project, attach files, or start from a built-in workflow.
+Describe the business output, choose the model capability, attach files, and keep the work inside one project.
 
-### Track the work
+### Track the Agent work
 
-<img src="assets/screenshots/desktop-conversation-running.jpg" alt="MyCodex running task" width="900">
+<img src="assets/screenshots/desktop-conversation-running.jpg" alt="DeepSeek企业桌面版 running task" width="900">
 
-See the task, current step, tool actions, and running state instead of waiting in a blank chat box.
+See the current step, tool actions, running state, and approval boundary instead of waiting in a blank chat box.
 
-### Keep the result
+### Keep deliverables
 
-<img src="assets/screenshots/desktop-conversation-result.jpg" alt="MyCodex result and artifacts" width="900">
+<img src="assets/screenshots/desktop-conversation-result.jpg" alt="DeepSeek企业桌面版 result and artifacts" width="900">
 
-The final answer, generated files, attachments, and follow-up context stay in the same conversation.
+Final answers, files, attachments, and follow-up context stay in the same desktop workspace.
 
 ### Preview files
 
-<img src="assets/screenshots/desktop-file-preview.jpg" alt="MyCodex file preview" width="900">
+<img src="assets/screenshots/desktop-file-preview.jpg" alt="DeepSeek企业桌面版 file preview" width="900">
 
-Preview Markdown, CSV, HTML, JSON, logs, images, PDFs, and other output before opening or downloading.
-
-### Use it from WeChat
-
-<img src="assets/screenshots/desktop-mobile-weixin.jpg" alt="MyCodex WeChat workflow" width="900">
-
-Connect WeChat to send tasks and receive generated files when you are away from the computer.
-
-### Set up models
-
-<img src="assets/screenshots/desktop-model-subscription.jpg" alt="MyCodex subscription model setup" width="900">
-
-Use subscription-account setup when possible, or configure API Key providers when you need more control.
-
-## Good Fit
-
-- Founders and managers who want research, summaries, and action lists without opening five tools.
-- Operators who repeat reporting, content, community, or campaign workflows.
-- Sales teams that need structured lead context and follow-up material.
-- Assistants and support teams turning messages, files, and webpages into deliverables.
-- Non-technical users who want an agent workspace without starting in a terminal.
+Preview Markdown, CSV, HTML, JSON, logs, images, PDFs, and other output before handing it to the business user.
 
 ## Feedback
 
-MyCodex is early. The best feedback is concrete: what job you tried, where you got stuck, and what output you expected.
+The best feedback is concrete: which skill you tried, what inputs you had, what output file you expected, and which step needed human approval.
 
 - [Installation help](https://github.com/guo2001china/mycodex/issues/new?template=installation_help.yml)
 - [Bug report](https://github.com/guo2001china/mycodex/issues/new?template=bug_report.yml)
 - [Feature request](https://github.com/guo2001china/mycodex/issues/new?template=feature_request.yml)
-- [Model provider request](https://github.com/guo2001china/mycodex/issues/new?template=model_provider.yml)
-- [Roadmap issues](https://github.com/guo2001china/mycodex/issues?q=is%3Aissue+is%3Aopen+label%3Aroadmap)
+- [Model provider or Token sharing request](https://github.com/guo2001china/mycodex/issues/new?template=model_provider.yml)
+- [Community feedback](https://github.com/guo2001china/mycodex/issues/new?template=community_feedback.yml)
 - [Discussions](https://github.com/guo2001china/mycodex/discussions)
 
 ## Status
 
-MyCodex is currently distributed as packaged installers. Full source is not published in this repository yet.
+DeepSeek企业桌面版 is currently distributed as packaged installers. Full source is not published in this repository yet.
 
-Test it in a non-critical project first, then move it into workflows where it saves real time.
+Test it in a non-critical workflow first, then move it into real team work where shared model capacity and repeatable skill delivery save time.
